@@ -1,6 +1,5 @@
-<!-- Opening Banner -->
 <p align="center">
-  <img src="esc_banner.gif" alt="esc — SOC Home Lab" width="100%"/>
+  <a href="https://github.com/MrFixer-02/esc">esc — SOC Home Lab</a>
 </p>
 
 <p align="center">
