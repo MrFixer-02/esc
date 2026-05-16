@@ -508,5 +508,5 @@ If a step didn't work for you — open a GitHub Issue. Include your Mac model, m
 </p>
 
 <p align="center">
-  <sub><a href="https://github.com/MrFixer-02">deadlilac</a> · <a href="https://www.linkedin.com/in/kk117">LinkedIn</a> · MIT License</sub>
+  <sub>Built by <a href="https://github.com/MrFixer-02">deadlilac</a> · <a href="https://www.linkedin.com/in/kk117">LinkedIn</a> · MIT License</sub>
 </p>
