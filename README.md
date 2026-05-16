@@ -487,6 +487,138 @@ If a step didn't work for you — open a GitHub Issue. Include your Mac model, m
 
 ---
 
+
+---
+
+## 🔐 Default Credentials & Security
+
+### Is Your Lab Safe to Use As-Is?
+
+**Yes — completely.** Your entire lab runs inside UTM's NAT network (`192.168.64.0/24`). This is a private network that only exists inside your Mac. Nobody on the internet, nobody on your home WiFi, nobody anywhere can reach `192.168.64.2` or `192.168.64.4` except your Mac itself.
+
+Even if someone reads this repo and knows the default credentials are `admin/admin` — those IPs don't exist outside your machine. They are useless to anyone who doesn't have physical access to your Mac.
+
+> ⚠️ **One rule: Always keep UTM on Shared Network (NAT) mode.** If you switch to Bridged networking, your VMs become visible on your home network. Never use Bridged mode for a security lab.
+
+### Default Credentials
+
+| Service | Username | Password |
+|---|---|---|
+| Wazuh Dashboard | `admin` | `admin` |
+| Wazuh API | `wazuh` | `wazuh` |
+
+These are fine to keep for a local NAT lab. But if you want to change them — follow the process below.
+
+---
+
+### 🔑 Changing the Dashboard Password (Correct Process for ARM64)
+
+> ⚡ **TRICKY STEP** — The official `wazuh-passwords-tool.sh` has a known bug on ARM64 that corrupts `internal_users.yml`. Do NOT use it. Use the API method below instead.
+
+**Step 1 — Unreserve the admin user:**
+```bash
+sudo nano /etc/wazuh-indexer/opensearch-security/internal_users.yml
+```
+Find the `admin:` section and change `reserved: true` to `reserved: false`:
+```yaml
+admin:
+  hash: "..."
+  reserved: false    ← change this
+  backend_roles:
+  - "admin"
+```
+Save: `Ctrl+X` → `Y` → Enter
+
+**Step 2 — Apply the config change:**
+```bash
+sudo /usr/share/wazuh-indexer/bin/indexer-security-init.sh
+sleep 30
+```
+
+**Step 3 — Change the password via API:**
+```bash
+curl -k -u admin:admin -X PUT   "https://192.168.64.4:9200/_plugins/_security/api/internalusers/admin"   -H "Content-Type: application/json"   -d '{"password": "YourNewPassword", "backend_roles": ["admin"]}'
+```
+Should return: `{"status":"OK","message":"'admin' updated."}`
+
+**Step 4 — Update the dashboard config to match:**
+```bash
+sudo nano /etc/wazuh-dashboard/opensearch_dashboards.yml
+```
+Find the password line and update it to your new password. Save and restart:
+```bash
+sudo systemctl restart wazuh-dashboard
+sleep 60
+```
+
+**Step 5 — Restore reserved status:**
+```bash
+sudo nano /etc/wazuh-indexer/opensearch-security/internal_users.yml
+```
+Change `reserved: false` back to `reserved: true`. Then:
+```bash
+sudo /usr/share/wazuh-indexer/bin/indexer-security-init.sh
+```
+
+✅ **VERIFY** — Login at `https://192.168.64.4` with your new password.
+
+---
+
+### 👤 Changing the Username (Create New Admin + Disable Default)
+
+Renaming the `admin` account directly is not recommended — it is referenced in multiple config files and certificates. The correct approach is:
+
+1. Create a new user with your preferred username
+2. Give it full admin privileges (same role as admin)
+3. Disable the default admin account
+
+Wazuh recognizes admin access by **role**, not by username. A new user with the admin role has identical access to everything — services don't care what the account is called, only what role it has.
+
+**Step 1 — Get an API token:**
+```bash
+TOKEN=$(curl -su 'wazuh:wazuh' -k -X GET "https://192.168.64.4:55000/security/user/authenticate?raw=true")
+echo $TOKEN
+```
+
+**Step 2 — Create your new admin user:**
+```bash
+curl -k -X POST "https://192.168.64.4:55000/security/users"   -H "Authorization: Bearer $TOKEN"   -H "Content-Type: application/json"   -d '{"username": "yourusername", "password": "YourPassword@123"}'
+```
+
+**Step 3 — Give it admin role:**
+```bash
+curl -k -X POST "https://192.168.64.4:55000/security/roles/administrator/users"   -H "Authorization: Bearer $TOKEN"   -H "Content-Type: application/json"   -d '{"users": ["yourusername"]}'
+```
+
+**Step 4 — Also create it in the Indexer:**
+```bash
+curl -k -u admin:admin -X PUT   "https://192.168.64.4:9200/_plugins/_security/api/internalusers/yourusername"   -H "Content-Type: application/json"   -d '{"password": "YourPassword@123", "backend_roles": ["admin"]}'
+```
+
+**Step 5 — Verify new user works, then disable admin:**
+```bash
+# Test login with new user first
+curl -k -u yourusername:YourPassword@123 https://192.168.64.4:9200
+
+# If successful, disable admin account
+curl -k -u yourusername:YourPassword@123 -X PATCH   "https://192.168.64.4:9200/_plugins/_security/api/internalusers/admin"   -H "Content-Type: application/json"   -d '[{"op": "replace", "path": "/attributes/enabled", "value": "false"}]'
+```
+
+💡 **NOTE** — Test your new user login in the dashboard before disabling admin. Once admin is disabled you cannot recover it without editing config files directly.
+
+---
+
+### Common Credential Errors & Fixes
+
+| Error | Cause | Fix |
+|---|---|---|
+| `wazuh-passwords-tool.py: command not found` | Wrong path/extension | Use `.sh` not `.py` — full path: `/usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh` |
+| `internal_users.yml not in OpenSearch Security 7 format` | Tool corrupted the file | Restore from backup in `/etc/wazuh-indexer/internalusers-backup/` — use the earliest `.bkp` file |
+| `Resource 'admin' is reserved` | Admin user is write-protected | Set `reserved: false` in `internal_users.yml` first, run security init, then change |
+| Dashboard shows "Invalid credentials" after password change | Dashboard config still has old password | Update password in `/etc/wazuh-dashboard/opensearch_dashboards.yml` and restart dashboard |
+| API returns `Unauthorized` with new password | Services not restarted after change | Restart all: indexer → manager → filebeat → dashboard in order |
+
+
 <!-- Closing Banner -->
 <p align="center">
   <img src="esc_closing_banner.gif" alt="The defense is built. Now watch it work." width="100%"/>
