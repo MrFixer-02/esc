@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Credentials — never commit these
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+passwords.txt
+credentials.txt
+secrets.txt
+.env
+*.env
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Wazuh install artifacts (large, reproducible)
+wazuh-install-files.tar
+wazuh-install.sh
+wazuh-certs-tool.sh
+wazuh-certificates/
+
+# Screenshots with sensitive info (add manually if needed)
+# screenshots/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
