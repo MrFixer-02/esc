@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="https://github.com/MrFixer-02/esc">esc — SOC Home Lab</a>
-</p>
+<h1 align="center">esc — SOC Home Lab</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Active_Development-EF9F27?style=flat-square"/>
