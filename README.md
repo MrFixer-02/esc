@@ -20,11 +20,27 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 
 ---
 
-## What I Am Building
+## Skills Being Built
 
-A self-hosted security operations environment that mirrors what real security teams use — running entirely on my Mac using virtual machines, isolated from the internet, no cloud dependencies.
+| Skill | What It Looks Like in This Lab |
+|---|---|
+| SOC Analysis | Triaging alerts, reading rule firings, understanding what triggered and why |
+| Incident Response | Building timelines, documenting findings, writing case studies from real detections |
+| Threat Hunting | Going beyond alerts to look for patterns and anomalies in event data |
+| Detection Engineering | Writing custom Wazuh rules to catch what built-in rules miss |
+| Vulnerability Assessment | Using Nmap to enumerate services, identify exposure, validate hardening |
 
-Each phase adds a new layer of capability — a new tool, a new attack surface, or a new detection method. The goal is a lab that covers the full attack-detection chain end to end.
+---
+
+## Lab Status
+
+| Metric | Current |
+|---|---|
+| Total alerts generated | 799 |
+| MITRE ATT&CK techniques detected | 9 |
+| Case studies complete | 1 |
+| Monitored endpoints | 1 |
+| Custom detection rules written | 0 — coming next |
 
 ---
 
@@ -33,7 +49,7 @@ Each phase adds a new layer of capability — a new tool, a new attack surface, 
 ```
 esc/
 ├── case-studies/       One folder per investigation — report and evidence
-├── worklogs/           Daily session logs — what was tested, found, and learned
+├── worklogs/           Session logs — what was tested, found, and learned
 ├── build-your-own/     Full step-by-step guide to replicate this lab
 ├── docs/               Reference docs — credentials, lessons learned
 └── assets/             Architecture diagrams, banners
