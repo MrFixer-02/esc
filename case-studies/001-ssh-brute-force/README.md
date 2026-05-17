@@ -13,8 +13,6 @@
 - [Evidence Index](./evidence/evidence-index.md)
 - [Screenshots](./evidence/screenshots/)
 - [Log Export](./evidence/logs/)
-- [LinkedIn Draft](./linkedin/post-draft.md)
-- [Resume Bullet](./resume-bullet.md)
 
 ---
 
@@ -25,3 +23,7 @@
 - PAM log analysis
 - MITRE ATT&CK mapping
 - Analyst response reasoning
+
+---
+
+*esc - SOC Home Lab · github.com/MrFixer-02/esc · Komal Kakarla (deadlilac)*
