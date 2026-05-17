@@ -112,6 +112,24 @@ All VMs run on UTM Shared Network NAT mode — subnet `192.168.64.0/24`. VMs tal
 
 ---
 
+## 🗺️ What You Are Building
+
+Before the installation steps — here is the complete picture of what this lab looks like when finished. Every component, every connection, every data flow.
+
+<p align="center">
+  <img src="assets/lab_architecture.svg" alt="esc SOC home lab architecture" width="100%"/>
+</p>
+
+**Reading the diagram:**
+- **Target VM** — the machine being monitored. The Wazuh agent lives here and ships everything it sees to the SIEM server.
+- **SIEM server** — four components working in a pipeline: Manager detects → Filebeat forwards → Indexer stores → Dashboard shows.
+- **Solid arrows** — log and alert data flowing through the pipeline automatically.
+- **Dashed arrows** — you interacting with the lab (SSH from terminal, browser to view alerts).
+
+Everything runs inside your Mac on an isolated NAT network. Nothing is exposed to the internet.
+
+---
+
 ## 🔧 Building Your SOC Lab
 
 > ✅ **Tested on:** MacBook Pro M5 · UTM 4.x · macOS Sonoma · May 2026
@@ -500,13 +518,16 @@ If a step didn't work for you — open a GitHub Issue. Include your Mac model, m
 
 👉 [Open an Issue](https://github.com/MrFixer-02/esc/issues)
 
+---
 
+
+---
 
 <!-- Closing Banner -->
 <p align="center">
-  <img src="esc_closing_banner.gif" alt="The defense is built. Now watch it work." width="100%"/>
+  <img src="assets/esc_closing_banner.gif" alt="The defense is built. Now watch it work." width="100%"/>
 </p>
 
 <p align="center">
-  <sub>Built by <a href="https://github.com/MrFixer-02">deadlilac</a> · <a href="https://www.linkedin.com/in/kk117">LinkedIn</a> · MIT License</sub>
+  <sub><a href="https://github.com/MrFixer-02">deadlilac</a> · <a href="https://www.linkedin.com/in/kk117">LinkedIn</a> · MIT License</sub>
 </p>
