@@ -12,9 +12,63 @@ Part of the [esc SOC Home Lab](../README.md) project · [github.com/MrFixer-02/e
 
 Before the installation steps — here is the complete picture of what this lab looks like when finished. Every component, every connection, every data flow.
 
-<p align="center">
-  <img src="../assets/lab_architecture.svg" alt="esc SOC home lab architecture" width="100%"/>
-</p>
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                    ANALYST WORKSTATION — APPLE SILICON MAC                     ║
+║                     UTM Hypervisor · NAT 10.0.2.0/24 · Isolated               ║
+║                                                                                 ║
+║  ┌─────────────────────────────────┐      ┌──────────────────────────────────┐ ║
+║  │         TARGET VM               │      │         SIEM SERVER VM           │ ║
+║  │   Ubuntu 24.04 · ARM64          │      │   Ubuntu 22.04 · ARM64           │ ║
+║  │   e.g. 10.0.2.101               │      │   e.g. 10.0.2.200                │ ║
+║  │                                 │      │                                  │ ║
+║  │  ┌───────────────────────────┐  │      │  ┌────────────────────────────┐  │ ║
+║  │  │       Wazuh agent         │  │      │  │      Wazuh manager         │  │ ║
+║  │  │  Monitors system activity │  │      │  │  Detection engine          │  │ ║
+║  │  │  Forwards logs → SIEM     │──┼──────┼─▶│  3000+ built-in rules      │  │ ║
+║  │  └───────────────────────────┘  │ logs │  │  MITRE ATT&CK mapping      │  │ ║
+║  │                                 │      │  │  port 1514                 │  │ ║
+║  │  Log sources collected:         │      │  └────────────┬───────────────┘  │ ║
+║  │  · SSH · PAM · sudo             │      │               │ alerts           │ ║
+║  │  · File integrity (/etc /var)   │      │               ▼                  │ ║
+║  │  · Process execution            │      │  ┌────────────────────────────┐  │ ║
+║  │  · Network connections          │      │  │        Filebeat            │  │ ║
+║  │                                 │      │  │  Forwards alerts           │  │ ║
+║  │  Threat simulations:            │      │  │  Manager → Indexer         │  │ ║
+║  │  · SSH brute force    T1110     │      │  └────────────┬───────────────┘  │ ║
+║  │  · Port scan          T1046     │      │               │                  │ ║
+║  │  · Privilege escalation T1548   │      │               ▼                  │ ║
+║  │  · Persistence        T1136     │      │  ┌────────────────────────────┐  │ ║
+║  │  · Defense evasion    T1070     │      │  │      Wazuh indexer         │  │ ║
+║  │  · Valid account      T1078     │      │  │  OpenSearch                │  │ ║
+║  │                                 │      │  │  Stores all alerts         │  │ ║
+║  └─────────────────────────────────┘      │  │  Full-text search          │  │ ║
+║                                           │  │  port 9200                 │  │ ║
+║                                           │  └────────────┬───────────────┘  │ ║
+║                                           │               │                  │ ║
+║                                           │               ▼                  │ ║
+║                                           │  ┌────────────────────────────┐  │ ║
+║                                           │  │     Wazuh dashboard        │  │ ║
+║                                           │  │  SOC analyst console       │  │ ║
+║                                           │  │  Alert timeline            │  │ ║
+║                                           │  │  MITRE ATT&CK heatmap      │  │ ║
+║                                           │  │  https://[siem-ip]         │  │ ║
+║                                           │  │  port 443                  │  │ ║
+║                                           │  └────────────────────────────┘  │ ║
+║                                           └──────────────────────────────────┘ ║
+║                                                            ▲                   ║
+║  ┌──────────────────────────┐             ┌───────────────────────────────┐    ║
+║  │    Analyst terminal      │             │     SOC analyst browser       │    ║
+║  │  SSH into VMs            │             │  Open https://[siem-ip]       │    ║
+║  │  Run simulations         │             │  Triage alerts                │    ║
+║  │  brew / apt tools        │             │  Review MITRE techniques      │    ║
+║  └──────────────────────────┘             └───────────────────────────────┘    ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+  ──────▶  Log / alert flow (automatic)
+  - - -▶  Analyst interaction (SSH / browser)
+```
+
 
 **Reading the diagram:**
 - **Target VM** — the machine being monitored. The Wazuh agent lives here and ships everything it sees to the SIEM server.
