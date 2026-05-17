@@ -128,4 +128,4 @@ Rule 2502 at Level 10 demands immediate attention. A real analyst checks three t
 
 ---
 
-*esc - SOC Home Lab · [github.com/MrFixer-02/esc](https://github.com/MrFixer-02/esc) · Komal Kakarla (deadlilac)*
+*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*

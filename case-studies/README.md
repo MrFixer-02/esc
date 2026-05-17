@@ -14,4 +14,4 @@ Case studies are promoted from daily worklogs when a finding has a clear story, 
 
 ---
 
-*esc - SOC Home Lab · [github.com/MrFixer-02/esc](https://github.com/MrFixer-02/esc) · Komal Kakarla (deadlilac)*
+*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*

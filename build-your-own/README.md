@@ -13,7 +13,7 @@ Part of the [esc SOC Home Lab](../README.md) project · [github.com/MrFixer-02/e
 Before the installation steps — here is the complete picture of what this lab looks like when finished. Every component, every connection, every data flow.
 
 <p align="center">
-  <img src="assets/lab_architecture.svg" alt="esc SOC home lab architecture" width="100%"/>
+  <img src="../assets/lab_architecture.svg" alt="esc SOC home lab architecture" width="100%"/>
 </p>
 
 **Reading the diagram:**
@@ -416,73 +416,6 @@ If a step didn't work for you — open a GitHub Issue. Include your Mac model, m
 
 ---
 
-
 ---
 
-
----
-
-## 🔐 Default Credentials & Security
-
-Your lab runs on UTM's NAT network — completely isolated from the internet and your home network. Nobody outside your Mac can reach your VMs even if they know the default credentials.
-
-| Service | Username | Password |
-|---|---|---|
-| Wazuh Dashboard | `admin` | `admin` |
-| Wazuh API | `wazuh` | `wazuh` |
-
-> ⚠️ Always keep UTM on **Shared Network (NAT)** mode. Never use Bridged mode for a security lab.
-
-Want to change credentials or ran into auth errors? The complete guide covers password change, username change, ARM64-specific bugs, and full recovery steps.
-
-👉 [Complete Credentials & Security Guide](../docs/credentials.md)
-
----
-
-## 🚨 Triggers Your First Alert
-
-From Mac Terminal:
-```bash
-ssh wronguser@192.168.64.2
-```
-Wrong password 3 times → `Ctrl+C`. Repeat once more.
-
-Check Wazuh Dashboard → **Threat Hunting → Events** within 60 seconds.
-
----
-
-## 🔭 Make It Yours
-
-**Attack capability:** [Kali Linux](https://www.kali.org/get-kali/#kali-virtual-machines) · [Metasploit](https://www.metasploit.com/) · [Burp Suite](https://portswigger.net/burp/communitydownload)
-
-**More detection:** [Suricata](https://suricata.io/) · [Zeek](https://zeek.org/) · [Wireshark](https://www.wireshark.org/)
-
-**More SIEMs:** [Splunk Free](https://www.splunk.com/en_us/download.html) · [Elastic Security](https://www.elastic.co/security)
-
-**Vulnerable targets:** [DVWA](https://github.com/digininja/DVWA) · [Metasploitable](https://sourceforge.net/projects/metasploitable/) · [VulnHub](https://www.vulnhub.com/)
-
----
-
-## 📋 Common Errors & Fixes
-
-| Error | Cause | Fix |
-|---|---|---|
-| `ERROR: Incompatible system. Must be 64-bit` | Wazuh installer rejects ARM64 | Install components via apt — skip the installer script |
-| `OpenSearch Security not initialized` | Indexer not fully warmed up | Wait 30s, restart indexer, re-run security init |
-| `missing field: output.elasticsearch.username` | Filebeat config placeholders | Replace `${username}` and `${password}` in filebeat.yml |
-| `ENOENT: dashboard-key.pem not found` | Cert filename mismatch | Symlink `dashboard.pem → wazuh-dashboard.pem` |
-| `chmod: cannot access certs/*` | Directory locked before files chmod'd | chmod files first, then chmod the directory |
-| VM boots back into installer | ISO still attached in UTM | Remove ISO from VM Settings → Drives |
-| Agent shows `Never Connected` | Agent cannot reach manager | Check Manager is running, verify IP in `/var/ossec/etc/ossec.conf` |
-
----
-
-## 🐛 Found an Issue?
-
-If a step didn't work for you — open a GitHub Issue. Include your Mac model, macOS version, and UTM version.
-
-👉 [Open an Issue](https://github.com/MrFixer-02/esc/issues)
-
----
-
-*Part of [esc SOC Home Lab](../README.md) · Built by [Komal Kakarla](https://github.com/MrFixer-02) · MIT License*
+*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02) · MIT License*
