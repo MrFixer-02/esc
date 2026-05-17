@@ -24,13 +24,7 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 
 A self-hosted security operations environment that mirrors what real security teams use — running entirely on my Mac using virtual machines, isolated from the internet, no cloud dependencies.
 
-```
-Phase A — Foundation      Wazuh SIEM · monitored endpoint · first detections     ✅ Complete
-Phase B — Attacker VM     Kali Linux · real attack tools · network detection      ⏳ Next
-Phase C and beyond        Web apps · network IDS · more SIEMs · detection eng.    📌 Planned
-```
-
-Each phase builds on the previous one. The goal is a lab that covers the full attack-detection chain end to end.
+Each phase adds a new layer of capability — a new tool, a new attack surface, or a new detection method. The goal is a lab that covers the full attack-detection chain end to end.
 
 ---
 
@@ -38,34 +32,12 @@ Each phase builds on the previous one. The goal is a lab that covers the full at
 
 ```
 esc/
-├── case-studies/       One folder per investigation — report, evidence, detections
+├── case-studies/       One folder per investigation — report and evidence
 ├── worklogs/           Daily session logs — what was tested, found, and learned
 ├── build-your-own/     Full step-by-step guide to replicate this lab
-├── docs/               Reference docs — credentials, lessons learned, templates
+├── docs/               Reference docs — credentials, lessons learned
 └── assets/             Architecture diagrams, banners
 ```
-
----
-
-## Phase A — What I Found
-
-Full Wazuh SIEM deployed on Apple Silicon. One monitored endpoint enrolled. Seven attack types simulated manually.
-
-**799 alerts · 9 MITRE ATT&CK techniques · 0 custom rules written**
-
-Key finding: defense evasion failed completely. Attempted to delete auth logs after attacks — Wazuh had already shipped everything to the SIEM server. Log deletion had zero effect.
-
-👉 [Phase A Case Study](case-studies/001-ssh-brute-force/case-study.md)
-
----
-
-## Case Studies
-
-| # | Title | MITRE Techniques | Status |
-|---|---|---|---|
-| [001](case-studies/001-ssh-brute-force/) | SSH Brute Force Detection | T1110 · T1110.001 | ✅ Complete |
-| 002 | Port Scan Reconnaissance | T1046 | 📌 Planned |
-| 003 | Privilege Escalation | T1548 | 📌 Planned |
 
 ---
 
