@@ -2,9 +2,9 @@
 
 > Repeated failed SSH login attempts detected by Wazuh, automatically escalated from individual failures to a brute force pattern at Level 10.
 
-**Date:** May 16, 2026  
-**Lab:** esc SOC Home Lab  
-**Tools:** Wazuh 4.7.5 · Ubuntu 24.04 target · Mac Terminal  
+**Date:** May 16, 2026
+**Lab:** esc - SOC Home Lab
+**Tools:** Wazuh 4.7.5 · Ubuntu 24.04 target · Mac Terminal
 **From worklog:** [2026-05-16](../../worklogs/2026-05-16.md)
 
 ---
@@ -18,8 +18,8 @@ Multiple failed SSH login attempts were simulated from the analyst workstation a
 ## Environment
 
 - **SIEM:** Wazuh 4.7.5 — self-hosted on Apple Silicon
-- **SIEM Server:** Ubuntu 22.04 LTS ARM64 · 192.168.64.4
-- **Target VM:** Ubuntu 24.04 LTS ARM64 · 192.168.64.2
+- **SIEM Server:** Ubuntu 22.04 LTS ARM64
+- **Target VM:** Ubuntu 24.04 LTS ARM64
 - **Network:** UTM Shared Network NAT — fully isolated from internet
 
 ---
@@ -42,8 +42,8 @@ Simulated an attacker repeatedly attempting SSH logins using a non-existent user
 ## Simulation Steps
 
 ```bash
-ssh wronguser@192.168.64.2    # wrong password 5x → Ctrl+C, repeated twice
-ssh root@192.168.64.2         # root SSH disabled on Ubuntu — always fails
+ssh wronguser@[target-ip]    # wrong password 5x → Ctrl+C, repeated twice
+ssh root@[target-ip]         # root SSH disabled on Ubuntu — always fails
 ```
 
 ---
@@ -65,23 +65,25 @@ ssh root@192.168.64.2         # root SSH disabled on Ubuntu — always fails
 
 | Time | Observation |
 |---|---|
-| 15:00 | First SSH attempt — wronguser@192.168.64.2 |
+| 15:00 | First SSH attempt — wronguser@[target-ip] |
 | 15:00 | Rule 5710 fired — non-existent user detected |
 | 15:01 | Rule 5503 fired — PAM login failed |
 | 15:02 | Rule 2502 fired — Level 10 — brute force pattern detected |
-| 15:03 | Second round of attempts — root@192.168.64.2 |
+| 15:03 | Second round — root@[target-ip] |
 | 15:03 | Rule 5712 fired — brute force confirmed |
 
-**Screenshot:** [02-events-list](./evidence/screenshots/02-events-list.png)
+**Screenshot:** [02-events-list](./evidence/screenshots/04-events-list.png)
 
 ---
 
 ## Key Evidence
 
 - [E-01 — Alert overview](./evidence/screenshots/01-alert-overview.png) — Wazuh dashboard showing Level 10 escalation
-- [E-02 — Events list](./evidence/screenshots/02-events-list.png) — Individual rule firings with timestamps
+- [E-02 — Threat hunting dashboard](./evidence/screenshots/02-threat-hunting-dashboard.png) — 799 alerts overview
 - [E-03 — MITRE wheel](./evidence/screenshots/03-mitre-wheel.png) — T1110 and T1110.001 mapped automatically
-- [E-04 — Events export](./evidence/logs/events-export.csv) — Raw event data from Wazuh
+- [E-04 — Events list](./evidence/screenshots/04-events-list.png) — Individual rule firings with timestamps
+- [E-05 — Events fullscreen](./evidence/screenshots/05-events-fullscreen.png) — 799 hits, 54 pages
+- [E-06 — Agent active](./evidence/screenshots/06-agent-active.png) — ubuntu-target confirmed Active
 
 See [evidence-index.md](./evidence/evidence-index.md) for full evidence register.
 
@@ -121,17 +123,9 @@ Rule 2502 at Level 10 demands immediate attention. A real analyst checks three t
 ## Lessons Learned
 
 - Wazuh's built-in correlation is powerful — Level 5 individual events automatically escalate to Level 10 pattern alerts with zero configuration
-- Username enumeration and authentication failure are separate signals — analysts should treat them as a combined indicator, not two isolated events
+- Username enumeration and authentication failure are separate signals — treat them as a combined indicator, not two isolated events
 - Root SSH being disabled is a default Ubuntu hardening measure — worth verifying on any new server deployment
 
 ---
 
-## Next Steps
-
-- Case 002: Document the port scan (Nmap) that preceded this brute force — complete the reconnaissance → attack chain
-- Write a custom Wazuh rule targeting SSH brute force from specific source IPs
-- Phase B: Run Hydra from Kali for automated brute force — compare high-volume detection vs manual simulation
-
----
-
-*esc SOC Home Lab · [github.com/MrFixer-02/esc](https://github.com/MrFixer-02/esc) · Komal Kakarla (deadlilac)*
+*esc - SOC Home Lab · [github.com/MrFixer-02/esc](https://github.com/MrFixer-02/esc) · Komal Kakarla (deadlilac)*
