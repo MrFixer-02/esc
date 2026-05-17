@@ -416,6 +416,4 @@ If a step didn't work for you — open a GitHub Issue. Include your Mac model, m
 
 ---
 
----
-
-*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02) · MIT License*
+*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*

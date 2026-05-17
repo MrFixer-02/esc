@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820" width="1400" height="820">
   <defs>
     <style>
       .bg { fill: #0D0D0D; }
@@ -10,14 +10,13 @@
       .component-gray { fill: #1A1A22; stroke: #3A3A4A; stroke-width: 1; }
       .component-dashed { fill: none; stroke: #3A3A4A; stroke-width: 1; stroke-dasharray: 5 3; }
       .component-analyst { fill: #161620; stroke: #4B5563; stroke-width: 1; }
-      .label-primary { font-family: "Courier New", monospace; font-size: 14px; font-weight: 700; fill: #E8E8E8; }
-      .label-secondary { font-family: "Courier New", monospace; font-size: 11px; fill: #9CA3AF; }
-      .label-accent-purple { font-family: "Courier New", monospace; font-size: 12px; font-weight: 700; fill: #C084FC; }
-      .label-accent-teal { font-family: "Courier New", monospace; font-size: 12px; font-weight: 700; fill: #34D399; }
-      .label-accent-gray { font-family: "Courier New", monospace; font-size: 11px; font-weight: 600; fill: #9CA3AF; }
-      .label-small { font-family: "Courier New", monospace; font-size: 10px; fill: #6B7280; }
-      .label-port { font-family: "Courier New", monospace; font-size: 9px; fill: #4B5563; }
-      .section-tag { font-family: "Courier New", monospace; font-size: 9px; fill: #4B5563; letter-spacing: 1px; }
+      .lp { font-family: "Courier New", monospace; font-size: 15px; font-weight: 700; fill: #E8E8E8; }
+      .ls { font-family: "Courier New", monospace; font-size: 12px; fill: #9CA3AF; }
+      .ltp { font-family: "Courier New", monospace; font-size: 13px; font-weight: 700; fill: #C084FC; }
+      .ltt { font-family: "Courier New", monospace; font-size: 13px; font-weight: 700; fill: #34D399; }
+      .lg { font-family: "Courier New", monospace; font-size: 11px; fill: #6B7280; }
+      .lport { font-family: "Courier New", monospace; font-size: 10px; fill: #5B21B6; }
+      .ltag { font-family: "Courier New", monospace; font-size: 9px; fill: #4B5563; letter-spacing: 1px; }
     </style>
     <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M1 1L9 5L1 9" fill="none" stroke="#7B2FBE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,144 +30,136 @@
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="780" class="bg"/>
+  <rect width="1400" height="820" class="bg"/>
 
   <!-- Title -->
-  <text x="600" y="36" text-anchor="middle" font-family="Courier New, monospace" font-size="16" font-weight="700" fill="#E8E8E8">esc — SOC Home Lab Architecture</text>
-  <text x="600" y="54" text-anchor="middle" font-family="Courier New, monospace" font-size="10" fill="#4B5563">Self-hosted SIEM · Apple Silicon · UTM NAT Network · Fully isolated from internet</text>
+  <text x="700" y="38" text-anchor="middle" font-family="Courier New, monospace" font-size="20" font-weight="700" fill="#E8E8E8">esc — SOC Home Lab Architecture</text>
+  <text x="700" y="60" text-anchor="middle" font-family="Courier New, monospace" font-size="12" fill="#4B5563">Self-hosted SIEM · Apple Silicon · UTM NAT Network · Fully isolated from internet</text>
 
-  <!-- ═══════════════════════════ HOST MACHINE ═══════════════════════════ -->
-  <rect x="30" y="68" width="1140" height="648" rx="16" class="host-fill" stroke="#2D2D3A" stroke-width="1"/>
-  <text x="52" y="88" class="section-tag">ANALYST WORKSTATION — APPLE SILICON MAC · UTM HYPERVISOR</text>
+  <!-- HOST MACHINE -->
+  <rect x="30" y="74" width="1340" height="698" rx="16" class="host-fill" stroke="#2D2D3A" stroke-width="1"/>
+  <text x="52" y="96" class="ltag">ANALYST WORKSTATION — APPLE SILICON MAC · UTM HYPERVISOR</text>
 
-  <!-- ═══════════════════════════ TARGET VM ═══════════════════════════ -->
-  <rect x="52" y="100" width="336" height="490" rx="12" class="endpoint-fill"/>
-  <text x="220" y="124" text-anchor="middle" class="label-accent-teal" font-size="13">TARGET VM</text>
-  <text x="220" y="142" text-anchor="middle" class="label-secondary">Ubuntu Server 24.04 · ARM64</text>
-  <text x="220" y="158" text-anchor="middle" class="label-small">e.g. 10.10.5.101 · user: analyst</text>
+  <!-- TARGET VM -->
+  <rect x="50" y="108" width="390" height="530" rx="12" class="endpoint-fill"/>
+  <text x="245" y="134" text-anchor="middle" class="ltt" font-size="15">TARGET VM</text>
+  <text x="245" y="154" text-anchor="middle" class="ls">Ubuntu Server 24.04 · ARM64</text>
+  <text x="245" y="172" text-anchor="middle" class="lg">e.g. 10.0.2.101 · user: analyst</text>
 
-  <!-- Agent -->
-  <rect x="72" y="170" width="296" height="68" rx="8" class="component-teal"/>
-  <text x="88" y="193" class="label-accent-teal">Wazuh agent</text>
-  <text x="88" y="211" class="label-secondary">Monitors all system activity</text>
-  <text x="88" y="227" class="label-secondary">Forwards events → SIEM · port 1514</text>
+  <!-- Wazuh Agent -->
+  <rect x="72" y="186" width="346" height="72" rx="8" class="component-teal"/>
+  <text x="245" y="212" text-anchor="middle" class="ltt">Wazuh agent</text>
+  <text x="245" y="232" text-anchor="middle" class="ls">Monitors all system activity</text>
+  <text x="245" y="250" text-anchor="middle" class="ls">Forwards events to SIEM · port 1514</text>
 
-  <!-- Log sources label -->
-  <line x1="72" y1="254" x2="368" y2="254" stroke="#1D6B52" stroke-width="0.5" stroke-dasharray="3 3"/>
-  <text x="88" y="270" class="section-tag">LOG SOURCES COLLECTED BY AGENT</text>
+  <!-- Log sources -->
+  <line x1="72" y1="276" x2="418" y2="276" stroke="#1D6B52" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <text x="88" y="294" class="ltag">LOG SOURCES</text>
 
-  <rect x="72" y="280" width="136" height="56" rx="6" class="component-gray"/>
-  <text x="140" y="302" text-anchor="middle" class="label-accent-gray">Authentication</text>
-  <text x="140" y="318" text-anchor="middle" class="label-small">SSH · PAM · sudo</text>
+  <rect x="72" y="304" width="160" height="60" rx="6" class="component-gray"/>
+  <text x="152" y="326" text-anchor="middle" class="lg" font-size="12" fill="#9CA3AF">Authentication</text>
+  <text x="152" y="346" text-anchor="middle" class="lg">SSH · PAM · sudo</text>
 
-  <rect x="232" y="280" width="136" height="56" rx="6" class="component-gray"/>
-  <text x="300" y="302" text-anchor="middle" class="label-accent-gray">File integrity</text>
-  <text x="300" y="318" text-anchor="middle" class="label-small">/etc · /var/log</text>
+  <rect x="258" y="304" width="160" height="60" rx="6" class="component-gray"/>
+  <text x="338" y="326" text-anchor="middle" class="lg" font-size="12" fill="#9CA3AF">File integrity</text>
+  <text x="338" y="346" text-anchor="middle" class="lg">/etc · /var/log</text>
 
-  <rect x="72" y="352" width="136" height="56" rx="6" class="component-gray"/>
-  <text x="140" y="374" text-anchor="middle" class="label-accent-gray">Processes</text>
-  <text x="140" y="390" text-anchor="middle" class="label-small">exec · signals</text>
+  <rect x="72" y="380" width="160" height="60" rx="6" class="component-gray"/>
+  <text x="152" y="402" text-anchor="middle" class="lg" font-size="12" fill="#9CA3AF">Processes</text>
+  <text x="152" y="422" text-anchor="middle" class="lg">exec · signals</text>
 
-  <rect x="232" y="352" width="136" height="56" rx="6" class="component-gray"/>
-  <text x="300" y="374" text-anchor="middle" class="label-accent-gray">Network</text>
-  <text x="300" y="390" text-anchor="middle" class="label-small">connections · ports</text>
+  <rect x="258" y="380" width="160" height="60" rx="6" class="component-gray"/>
+  <text x="338" y="402" text-anchor="middle" class="lg" font-size="12" fill="#9CA3AF">Network</text>
+  <text x="338" y="422" text-anchor="middle" class="lg">connections · ports</text>
 
   <!-- Threat simulations -->
-  <line x1="72" y1="424" x2="368" y2="424" stroke="#1D6B52" stroke-width="0.5" stroke-dasharray="3 3"/>
-  <text x="88" y="440" class="section-tag">THREAT SIMULATIONS</text>
-  <rect x="72" y="450" width="296" height="128" rx="8" class="component-dashed"/>
-  <text x="88" y="472" class="label-secondary">· Brute force attack              T1110</text>
-  <text x="88" y="492" class="label-secondary">· Port scan / reconnaissance       T1046</text>
-  <text x="88" y="512" class="label-secondary">· Privilege escalation             T1548</text>
-  <text x="88" y="532" class="label-secondary">· Persistence (backdoor account)   T1136</text>
-  <text x="88" y="552" class="label-secondary">· Defense evasion (log deletion)   T1070</text>
-  <text x="88" y="572" class="label-secondary">· Valid account / unusual login    T1078</text>
+  <line x1="72" y1="458" x2="418" y2="458" stroke="#1D6B52" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <text x="88" y="476" class="ltag">THREAT SIMULATIONS</text>
+  <rect x="72" y="486" width="346" height="136" rx="8" class="component-dashed"/>
+  <text x="88" y="510" class="ls">· Brute force attack</text>
+  <text x="88" y="532" class="ls">· Port scan / reconnaissance</text>
+  <text x="88" y="554" class="ls">· Privilege escalation</text>
+  <text x="88" y="576" class="ls">· Persistence (backdoor account)</text>
+  <text x="88" y="598" class="ls">· Defense evasion (log deletion)</text>
 
-  <!-- ═══════════════ CENTER ARROW — log stream ═══════════════ -->
-  <line x1="388" y1="206" x2="508" y2="206" stroke="#1D9E75" stroke-width="2" fill="none" marker-end="url(#arrowTeal)"/>
-  <text x="448" y="196" text-anchor="middle" class="label-small">log stream</text>
-  <text x="448" y="222" text-anchor="middle" class="label-small">port 1514</text>
+  <!-- Log stream arrow -->
+  <line x1="440" y1="224" x2="560" y2="224" stroke="#1D9E75" stroke-width="2" marker-end="url(#arrowTeal)"/>
+  <text x="500" y="214" text-anchor="middle" class="lg" font-size="12" fill="#1D9E75">log stream</text>
+  <text x="500" y="242" text-anchor="middle" class="lg">port 1514</text>
 
-  <!-- ═══════════════════════════ SIEM VM ═══════════════════════════ -->
-  <rect x="514" y="100" width="626" height="490" rx="12" class="siem-fill"/>
-  <text x="827" y="124" text-anchor="middle" class="label-accent-purple" font-size="13">SIEM SERVER VM</text>
-  <text x="827" y="142" text-anchor="middle" class="label-secondary">Ubuntu Server 22.04 · ARM64</text>
-  <text x="827" y="158" text-anchor="middle" class="label-small">e.g. 10.10.5.200 · user: analyst</text>
+  <!-- SIEM SERVER VM -->
+  <rect x="580" y="108" width="760" height="530" rx="12" class="siem-fill"/>
+  <text x="960" y="134" text-anchor="middle" class="ltp" font-size="15">SIEM SERVER VM</text>
+  <text x="960" y="154" text-anchor="middle" class="ls">Ubuntu Server 22.04 · ARM64</text>
+  <text x="960" y="172" text-anchor="middle" class="lg">e.g. 10.0.2.200 · user: analyst</text>
 
   <!-- Manager -->
-  <rect x="534" y="170" width="586" height="76" rx="8" class="component-purple"/>
-  <rect x="534" y="170" width="4" height="76" rx="2" fill="#7B2FBE"/>
-  <text x="554" y="194" class="label-accent-purple">Wazuh manager</text>
-  <text x="554" y="212" class="label-secondary">Detection engine · runs 3000+ rules · maps every event to MITRE ATT&amp;CK technique</text>
-  <text x="554" y="230" class="label-secondary">Assigns severity level 1–15 · generates structured alerts · exposes REST API</text>
-  <text x="1108" y="200" text-anchor="end" class="label-port">:1514 agents</text>
-  <text x="1108" y="216" text-anchor="end" class="label-port">:55000 API</text>
+  <rect x="604" y="186" width="712" height="86" rx="8" class="component-purple"/>
+  <rect x="604" y="186" width="5" height="86" rx="2" fill="#7B2FBE"/>
+  <text x="624" y="212" class="ltp">Wazuh manager</text>
+  <text x="624" y="234" class="ls">Detection engine · runs 3000+ built-in rules</text>
+  <text x="624" y="254" class="ls">Maps every event to MITRE ATT&amp;CK · assigns severity 1–15 · generates alerts</text>
+  <text x="1108" y="208" text-anchor="end" class="lport">port 1514</text>
+  <text x="1108" y="226" text-anchor="end" class="lport">port 55000</text>
 
   <!-- Arrow Manager → Filebeat -->
-  <line x1="827" y1="246" x2="827" y2="276" stroke="#7B2FBE" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  <line x1="960" y1="272" x2="960" y2="304" stroke="#7B2FBE" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
 
   <!-- Filebeat -->
-  <rect x="534" y="276" width="586" height="60" rx="8" class="component-gray"/>
-  <rect x="534" y="276" width="4" height="60" rx="2" fill="#4B5563"/>
-  <text x="554" y="300" class="label-accent-gray" font-size="12">Filebeat  —  log forwarder</text>
-  <text x="554" y="318" class="label-secondary">Reads processed alerts from Wazuh Manager · forwards to Indexer in real time</text>
-  <text x="1108" y="310" text-anchor="end" class="label-port">v7.10.2</text>
+  <rect x="604" y="304" width="712" height="68" rx="8" class="component-gray"/>
+  <rect x="604" y="304" width="5" height="68" rx="2" fill="#4B5563"/>
+  <text x="624" y="330" class="lg" font-size="13" fill="#9CA3AF">Filebeat — log forwarder</text>
+  <text x="624" y="352" class="ls">Reads alerts from manager · ships to indexer in real time</text>
+  <text x="1108" y="344" text-anchor="end" class="lport">v7.10.2</text>
 
   <!-- Arrow Filebeat → Indexer -->
-  <line x1="827" y1="336" x2="827" y2="366" stroke="#7B2FBE" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  <line x1="960" y1="372" x2="960" y2="404" stroke="#7B2FBE" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
 
   <!-- Indexer -->
-  <rect x="534" y="366" width="586" height="76" rx="8" class="component-purple"/>
-  <rect x="534" y="366" width="4" height="76" rx="2" fill="#7B2FBE"/>
-  <text x="554" y="390" class="label-accent-purple">Wazuh indexer  —  OpenSearch</text>
-  <text x="554" y="408" class="label-secondary">Stores and indexes all alerts · enables fast full-text search across millions of events</text>
-  <text x="554" y="426" class="label-secondary">Handles security API · manages internal user authentication</text>
-  <text x="1108" y="398" text-anchor="end" class="label-port">:9200</text>
+  <rect x="604" y="404" width="712" height="86" rx="8" class="component-purple"/>
+  <rect x="604" y="404" width="5" height="86" rx="2" fill="#7B2FBE"/>
+  <text x="624" y="430" class="ltp">Wazuh indexer — OpenSearch</text>
+  <text x="624" y="452" class="ls">Stores and indexes all alerts · enables fast search across millions of events</text>
+  <text x="624" y="472" class="ls">Handles security API · manages internal user authentication</text>
+  <text x="1108" y="444" text-anchor="end" class="lport">port 9200</text>
 
   <!-- Arrow Indexer → Dashboard -->
-  <line x1="827" y1="442" x2="827" y2="472" stroke="#7B2FBE" stroke-width="1.5" fill="none" marker-end="url(#arrowPurple)"/>
+  <line x1="960" y1="490" x2="960" y2="522" stroke="#7B2FBE" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
 
   <!-- Dashboard -->
-  <rect x="534" y="472" width="586" height="76" rx="8" class="component-purple"/>
-  <rect x="534" y="472" width="4" height="76" rx="2" fill="#C084FC"/>
-  <text x="554" y="496" class="label-accent-purple">Wazuh dashboard  —  SOC analyst console</text>
-  <text x="554" y="514" class="label-secondary">Web UI · alert timeline · MITRE ATT&amp;CK heatmap · Threat Hunting · agent status</text>
-  <text x="554" y="532" class="label-secondary">Access at https://[siem-ip] in your Mac browser · default credentials admin/admin</text>
-  <text x="1108" y="504" text-anchor="end" class="label-port">:443 HTTPS</text>
+  <rect x="604" y="522" width="712" height="86" rx="8" class="component-purple"/>
+  <rect x="604" y="522" width="5" height="86" rx="2" fill="#C084FC"/>
+  <text x="624" y="548" class="ltp">Wazuh dashboard — SOC analyst console</text>
+  <text x="624" y="570" class="ls">Web UI · alert timeline · MITRE ATT&amp;CK heatmap · Threat Hunting · agent status</text>
+  <text x="624" y="590" class="ls">Access at https://[siem-ip] in your Mac browser</text>
+  <text x="1108" y="562" text-anchor="end" class="lport">port 443</text>
 
-  <!-- ═══════════════════════════ BOTTOM ROW — analyst ═══════════════════════════ -->
+  <!-- BOTTOM ROW -->
+  <!-- Analyst terminal -->
+  <rect x="50" y="656" width="390" height="90" rx="10" class="component-analyst"/>
+  <rect x="50" y="656" width="390" height="4" rx="1" fill="#4B5563"/>
+  <text x="245" y="682" text-anchor="middle" class="lg" font-size="13" fill="#9CA3AF">Analyst terminal</text>
+  <text x="245" y="704" text-anchor="middle" class="ls">SSH into VMs · run threat simulations</text>
+  <text x="245" y="724" text-anchor="middle" class="lg">e.g. ssh analyst@10.0.2.101</text>
 
-  <!-- Analyst terminal box -->
-  <rect x="52" y="608" width="336" height="84" rx="10" class="component-analyst"/>
-  <rect x="52" y="608" width="336" height="3" rx="1" fill="#4B5563"/>
-  <text x="220" y="632" text-anchor="middle" class="label-accent-gray" font-size="12">Analyst terminal</text>
-  <text x="220" y="650" text-anchor="middle" class="label-secondary">SSH into VMs · run threat simulations</text>
-  <text x="220" y="666" text-anchor="middle" class="label-secondary">brew install tools · apt inside VMs</text>
-  <text x="220" y="682" text-anchor="middle" class="label-small">e.g. ssh analyst@10.10.5.101</text>
+  <!-- Arrow terminal → target -->
+  <line x1="245" y1="656" x2="245" y2="638" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowGray)"/>
 
-  <!-- Arrow terminal up to target VM -->
-  <line x1="220" y1="608" x2="220" y2="590" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrowGray)"/>
+  <!-- SOC browser -->
+  <rect x="580" y="656" width="760" height="90" rx="10" class="component-analyst"/>
+  <rect x="580" y="656" width="760" height="4" rx="1" fill="#7B2FBE"/>
+  <text x="960" y="682" text-anchor="middle" class="ltp">SOC analyst browser</text>
+  <text x="960" y="704" text-anchor="middle" class="ls">Open https://[siem-ip] · log in to Wazuh dashboard</text>
+  <text x="960" y="724" text-anchor="middle" class="lg">e.g. https://10.0.2.200</text>
 
-  <!-- SOC browser box -->
-  <rect x="514" y="608" width="626" height="84" rx="10" class="component-analyst"/>
-  <rect x="514" y="608" width="626" height="3" rx="1" fill="#7B2FBE"/>
-  <text x="827" y="632" text-anchor="middle" class="label-accent-purple" font-size="12">SOC analyst browser</text>
-  <text x="827" y="650" text-anchor="middle" class="label-secondary">Open https://[siem-ip] on your Mac · log in to Wazuh dashboard</text>
-  <text x="827" y="666" text-anchor="middle" class="label-secondary">Triage alerts · review MITRE ATT&amp;CK techniques · export events</text>
-  <text x="827" y="682" text-anchor="middle" class="label-small">e.g. https://10.10.5.200</text>
-
-  <!-- Arrow browser up to dashboard -->
-  <line x1="827" y1="608" x2="827" y2="548" stroke="#7B2FBE" stroke-width="1.5" stroke-dasharray="5 3" fill="none" marker-end="url(#arrowPurple)"/>
-
-  <!-- Gap between terminal and browser -->
-  <text x="448" y="650" text-anchor="middle" class="label-small">your</text>
-  <text x="448" y="664" text-anchor="middle" class="label-small">Mac</text>
+  <!-- Arrow browser → dashboard -->
+  <line x1="960" y1="656" x2="960" y2="608" stroke="#7B2FBE" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowPurple)"/>
 
   <!-- Legend -->
-  <line x1="52" y1="730" x2="86" y2="730" stroke="#1D9E75" stroke-width="2" marker-end="url(#arrowTeal)"/>
-  <text x="94" y="734" font-family="Courier New, monospace" font-size="10" fill="#6B7280">Log / alert flow</text>
-  <line x1="230" y1="730" x2="264" y2="730" stroke="#7B2FBE" stroke-width="2" marker-end="url(#arrowPurple)"/>
-  <text x="272" y="734" font-family="Courier New, monospace" font-size="10" fill="#6B7280">Internal SIEM pipeline</text>
-  <line x1="430" y1="730" x2="464" y2="730" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowGray)"/>
-  <text x="472" y="734" font-family="Courier New, monospace" font-size="10" fill="#6B7280">Analyst interaction (SSH / browser)</text>
+  <line x1="50" y1="778" x2="90" y2="778" stroke="#1D9E75" stroke-width="2" marker-end="url(#arrowTeal)"/>
+  <text x="98" y="782" font-family="Courier New, monospace" font-size="12" fill="#6B7280">Log / alert flow</text>
+  <line x1="260" y1="778" x2="300" y2="778" stroke="#7B2FBE" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="308" y="782" font-family="Courier New, monospace" font-size="12" fill="#6B7280">Internal SIEM pipeline</text>
+  <line x1="520" y1="778" x2="560" y2="778" stroke="#4B5563" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowGray)"/>
+  <text x="568" y="782" font-family="Courier New, monospace" font-size="12" fill="#6B7280">Analyst interaction (SSH / browser)</text>
 </svg>
