@@ -8,9 +8,9 @@ Case studies are promoted from daily worklogs when a finding has a clear story, 
 
 ## Index
 
-| # | Title | Phase | MITRE | Status |
-|---|---|---|---|---|
-| [001](001-ssh-brute-force/) | SSH Brute Force Detection | A | T1110 · T1110.001 | ✅ Complete |
+| Case | MITRE | Status |
+|---|---|---|
+| [001 — SSH Brute Force Detection](001-ssh-brute-force/case-study.md) | T1110 · T1110.001 | ✅ Complete |
 
 ---
 
