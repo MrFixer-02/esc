@@ -12,61 +12,66 @@ Part of the [esc SOC Home Lab](../README.md) project · [github.com/MrFixer-02/e
 
 Before the installation steps — here is the complete picture of what this lab looks like when finished. Every component, every connection, every data flow.
 
-```
-╔══════════════════════════════════════════════════════════════════════════════════╗
-║                    ANALYST WORKSTATION — APPLE SILICON MAC                     ║
-║                     UTM Hypervisor · NAT 10.0.2.0/24 · Isolated               ║
-║                                                                                 ║
-║  ┌─────────────────────────────────┐      ┌──────────────────────────────────┐ ║
-║  │         TARGET VM               │      │         SIEM SERVER VM           │ ║
-║  │   Ubuntu 24.04 · ARM64          │      │   Ubuntu 22.04 · ARM64           │ ║
-║  │   e.g. 10.0.2.101               │      │   e.g. 10.0.2.200                │ ║
-║  │                                 │      │                                  │ ║
-║  │  ┌───────────────────────────┐  │      │  ┌────────────────────────────┐  │ ║
-║  │  │       Wazuh agent         │  │      │  │      Wazuh manager         │  │ ║
-║  │  │  Monitors system activity │  │      │  │  Detection engine          │  │ ║
-║  │  │  Forwards logs → SIEM     │──┼──────┼─▶│  3000+ built-in rules      │  │ ║
-║  │  └───────────────────────────┘  │ logs │  │  MITRE ATT&CK mapping      │  │ ║
-║  │                                 │      │  │  port 1514                 │  │ ║
-║  │  Log sources collected:         │      │  └────────────┬───────────────┘  │ ║
-║  │  · SSH · PAM · sudo             │      │               │ alerts           │ ║
-║  │  · File integrity (/etc /var)   │      │               ▼                  │ ║
-║  │  · Process execution            │      │  ┌────────────────────────────┐  │ ║
-║  │  · Network connections          │      │  │        Filebeat            │  │ ║
-║  │                                 │      │  │  Forwards alerts           │  │ ║
-║  │  Threat simulations:            │      │  │  Manager → Indexer         │  │ ║
-║  │  · SSH brute force    T1110     │      │  └────────────┬───────────────┘  │ ║
-║  │  · Port scan          T1046     │      │               │                  │ ║
-║  │  · Privilege escalation T1548   │      │               ▼                  │ ║
-║  │  · Persistence        T1136     │      │  ┌────────────────────────────┐  │ ║
-║  │  · Defense evasion    T1070     │      │  │      Wazuh indexer         │  │ ║
-║  │  · Valid account      T1078     │      │  │  OpenSearch                │  │ ║
-║  │                                 │      │  │  Stores all alerts         │  │ ║
-║  └─────────────────────────────────┘      │  │  Full-text search          │  │ ║
-║                                           │  │  port 9200                 │  │ ║
-║                                           │  └────────────┬───────────────┘  │ ║
-║                                           │               │                  │ ║
-║                                           │               ▼                  │ ║
-║                                           │  ┌────────────────────────────┐  │ ║
-║                                           │  │     Wazuh dashboard        │  │ ║
-║                                           │  │  SOC analyst console       │  │ ║
-║                                           │  │  Alert timeline            │  │ ║
-║                                           │  │  MITRE ATT&CK heatmap      │  │ ║
-║                                           │  │  https://[siem-ip]         │  │ ║
-║                                           │  │  port 443                  │  │ ║
-║                                           │  └────────────────────────────┘  │ ║
-║                                           └──────────────────────────────────┘ ║
-║                                                            ▲                   ║
-║  ┌──────────────────────────┐             ┌───────────────────────────────┐    ║
-║  │    Analyst terminal      │             │     SOC analyst browser       │    ║
-║  │  SSH into VMs            │             │  Open https://[siem-ip]       │    ║
-║  │  Run simulations         │             │  Triage alerts                │    ║
-║  │  brew / apt tools        │             │  Review MITRE techniques      │    ║
-║  └──────────────────────────┘             └───────────────────────────────┘    ║
-╚══════════════════════════════════════════════════════════════════════════════════╝
+```mermaid
+graph TB
+    subgraph MAC["🖥️  ANALYST WORKSTATION — Apple Silicon Mac · UTM Hypervisor · NAT 10.0.2.0/24"]
+        subgraph TARGET["TARGET VM — Ubuntu 24.04 · ARM64 · e.g. 10.0.2.101"]
+            AGENT["🔍 Wazuh Agent
+Monitors all system activity
+Forwards log stream to SIEM"]
+            LOGS["Log Sources
+SSH · PAM · sudo · File integrity
+Processes · Network connections"]
+            SIM["Threat Simulations
+Brute force T1110 · Port scan T1046
+Privilege escalation T1548
+Persistence T1136 · Defense evasion T1070
+Valid account T1078"]
+            LOGS --> AGENT
+        end
 
-  ──────▶  Log / alert flow (automatic)
-  - - -▶  Analyst interaction (SSH / browser)
+        subgraph SIEM["SIEM SERVER VM — Ubuntu 22.04 · ARM64 · e.g. 10.0.2.200"]
+            MANAGER["⚙️ Wazuh Manager
+Detection engine · 3000+ rules
+MITRE ATT&CK mapping · port 1514"]
+            FILEBEAT["📨 Filebeat
+Forwards alerts → Indexer"]
+            INDEXER["🗄️ Wazuh Indexer — OpenSearch
+Stores and indexes all alerts
+Full-text search · port 9200"]
+            DASHBOARD["📊 Wazuh Dashboard
+SOC analyst console
+Alert timeline · MITRE heatmap
+https://siem-ip · port 443"]
+            MANAGER --> FILEBEAT
+            FILEBEAT --> INDEXER
+            INDEXER --> DASHBOARD
+        end
+
+        TERMINAL["💻 Analyst Terminal
+SSH into VMs · run simulations
+brew / apt install tools"]
+        BROWSER["🌐 SOC Analyst Browser
+Open https://siem-ip
+Triage alerts · review MITRE"]
+
+        AGENT -->|"log stream · port 1514"| MANAGER
+        TERMINAL -.->|SSH| TARGET
+        BROWSER -.->|HTTPS| DASHBOARD
+    end
+
+    style MAC fill:#111318,stroke:#2D2D3A,color:#9CA3AF
+    style TARGET fill:#0D1F1A,stroke:#1D9E75,color:#34D399
+    style SIEM fill:#160D2B,stroke:#5B21B6,color:#C084FC
+    style AGENT fill:#0A2419,stroke:#1D9E75,color:#34D399
+    style LOGS fill:#1A1A22,stroke:#3A3A4A,color:#9CA3AF
+    style SIM fill:#1A1A22,stroke:#3A3A4A,color:#9CA3AF
+    style MANAGER fill:#1E0F3D,stroke:#7B2FBE,color:#C084FC
+    style FILEBEAT fill:#1A1A22,stroke:#3A3A4A,color:#9CA3AF
+    style INDEXER fill:#1E0F3D,stroke:#7B2FBE,color:#C084FC
+    style DASHBOARD fill:#1E0F3D,stroke:#7B2FBE,color:#C084FC
+    style TERMINAL fill:#161620,stroke:#4B5563,color:#9CA3AF
+    style BROWSER fill:#161620,stroke:#4B5563,color:#9CA3AF
 ```
 
 
