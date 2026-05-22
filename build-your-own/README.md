@@ -87,13 +87,13 @@ Everything runs inside your Mac on an isolated NAT network. Nothing is exposed t
 
 ## 🔧 Building Your SOC Lab
 
-> ✅ **Tested on:** MacBook Pro M5 · UTM 4.x · macOS Sonoma · May 2026
+> ✅ **Tested on:** MacBook Pro M5 · UTM 4.x · macOS Sonoma · Wazuh 4.14.5 · May 2026
 >
 > These steps are verified to work on this setup. If you are on a different M-series Mac (M1/M2/M3/M4) the steps are identical. Different UTM versions may have slightly different UI but the same core functionality.
 
 ### Before You Start
 
-This guide installs Wazuh **component by component** using apt, not the all-in-one installer script. The official `wazuh-install.sh` rejects ARM64 systems with a 64-bit compatibility error despite ARM64 being fully 64-bit. We skip it entirely and install each component directly — this also gives you a better understanding of the architecture.
+This guide installs Wazuh **component by component** using apt, not the all-in-one installer script. The official `wazuh-install.sh` has a dashboard initialization timeout on ARM64 — the installer waits 5 minutes for the dashboard to start, but ARM64 systems need 10-15 minutes. The install always fails at this step. We skip the script entirely and install each component directly — this also gives you a better understanding of the architecture.
 
 ### Tricky Step Legend
 
@@ -199,11 +199,22 @@ ssh yourusername@192.168.64.4
 
 All remaining commands run inside this SSH session.
 
+**2.4 — Expand LVM to full disk**
+
+⚡ **TRICKY STEP** — Ubuntu installer allocates only ~23.5G by default even on a 50G disk. Wazuh Indexer fills this during initialization and will fail with `No space left on device` if not expanded first.
+
+```bash
+sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+```
+
+✅ **VERIFY:** `df -h /` — total should reflect the full 50G disk.
+
 ---
 
 ### Part 3 — Install Wazuh
 
-💡 **NOTE** — Running `wazuh-install.sh` on ARM64 returns: `ERROR: Incompatible system. This script must be run on a 64-bit system.` This is a bug in the script's architecture check. We install each component via apt instead.
+💡 **NOTE** — The all-in-one `wazuh-install.sh` script fails on ARM64 with a dashboard initialization timeout — the installer waits 5 minutes for the dashboard to start, but ARM64 needs 10-15 minutes. The installation exits before the dashboard is ready. We install each component via apt instead.
 
 **3.1 — Update system and add Wazuh repository**
 ```bash
@@ -230,8 +241,8 @@ sudo apt install wazuh-indexer -y
 ⚡ **TRICKY STEP** — chmod files individually FIRST, then lock the directory. Locking first blocks your own access to the files inside.
 
 ```bash
-sudo curl -sO https://packages.wazuh.com/4.7/wazuh-certs-tool.sh
-sudo curl -sO https://packages.wazuh.com/4.7/config.yml
+sudo curl -sO https://packages.wazuh.com/4.14/wazuh-certs-tool.sh
+sudo curl -sO https://packages.wazuh.com/4.14/config.yml
 
 sudo sed -i 's/<indexer-node-ip>/192.168.64.4/g' config.yml
 sudo sed -i 's/<wazuh-manager-ip>/192.168.64.4/g' config.yml
@@ -289,8 +300,13 @@ sudo systemctl start wazuh-manager
 
 ```bash
 sudo apt install filebeat -y
+
+sudo curl -so /tmp/wazuh-filebeat.tar.gz \
+  https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.4.tar.gz
+sudo tar -xvz -f /tmp/wazuh-filebeat.tar.gz -C /usr/share/filebeat/module
+
 sudo curl -so /etc/filebeat/filebeat.yml \
-  https://packages.wazuh.com/4.7/tpl/wazuh/filebeat/filebeat.yml
+  https://packages.wazuh.com/4.14/tpl/wazuh/filebeat/filebeat.yml
 sudo sed -i 's|hosts:.*|hosts: ["192.168.64.4:9200"]|' /etc/filebeat/filebeat.yml
 sudo nano /etc/filebeat/filebeat.yml
 ```
@@ -311,12 +327,8 @@ output.elasticsearch:
 Remove any `${username}` or `${password}` lines. Save: `Ctrl+X` → `Y` → Enter.
 
 ```bash
-sudo curl -so /tmp/wazuh-filebeat.tar.gz \
-  https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.4.tar.gz
-sudo tar -xvz -f /tmp/wazuh-filebeat.tar.gz -C /usr/share/filebeat/module
-
 sudo curl -so /etc/filebeat/wazuh-template.json \
-  https://raw.githubusercontent.com/wazuh/wazuh/v4.7.5/extensions/elasticsearch/7.x/wazuh-template.json
+  https://raw.githubusercontent.com/wazuh/wazuh/v4.14.5/extensions/elasticsearch/7.x/wazuh-template.json
 sudo chmod go+r /etc/filebeat/wazuh-template.json
 
 sudo mkdir /etc/filebeat/certs && sudo chmod 755 /etc/filebeat/certs
@@ -400,7 +412,7 @@ Your lab runs on UTM's NAT network — completely isolated from the internet and
 
 Want to change credentials or ran into auth errors? The complete guide covers password change, username change, ARM64-specific bugs, and full recovery steps.
 
-👉 [Complete Credentials & Security Guide](docs/credentials.md)
+👉 [Complete Credentials & Security Guide](../references/credentials.md)
 
 ## 🚨 Alerts & Detection
 
@@ -458,6 +470,12 @@ Wazuh automatically maps these to **MITRE ATT&CK T1110 — Brute Force**.
 | Error | Cause | Fix |
 |---|---|---|
 | `ERROR: Incompatible system. Must be 64-bit` | Wazuh installer rejects ARM64 | Install components via apt — skip the installer script |
+| Dashboard never comes up — browser can't connect after install | Dashboard initialization timeout on ARM64 — service waits 5 min, ARM64 needs 10-15 min | Wait 10-15 minutes. If still failing: `sudo systemctl restart wazuh-dashboard && sleep 120` |
+| `No space left on device` during indexer initialization | Ubuntu allocates ~23.5G by default even on a 50G disk | `sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv && sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv` |
+| Filebeat running but no alerts appear in dashboard | Wazuh Filebeat module not downloaded | Download `wazuh-filebeat-0.4.tar.gz` and extract to `/usr/share/filebeat/module` |
+| No alert data in Indexer — dashboard shows blank | Wazuh index template not loaded | Download `wazuh-template.json` and run `filebeat setup --index-management` |
+| VirusTotal integration runs but rules 87101/87105 never fire | Free tier v2 API deprecated — all free keys return empty responses | Patch `virustotal.py` to use v3 endpoint (`https://www.virustotal.com/api/v3/files/{hash}`) with `x-apikey` header |
+| Active response script runs but threat file is not deleted | Wazuh user lacks write permission to `/tmp` in chroot environment | `sudo chmod 1777 /tmp` |
 | `OpenSearch Security not initialized` | Indexer not fully warmed up | Wait 30s, restart indexer, re-run security init |
 | `missing field: output.elasticsearch.username` | Filebeat config placeholders | Replace `${username}` and `${password}` in filebeat.yml |
 | `ENOENT: dashboard-key.pem not found` | Cert filename mismatch | Symlink `dashboard.pem → wazuh-dashboard.pem` |

@@ -36,11 +36,11 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 
 | Metric | Current |
 |---|---|
-| Total alerts generated | 799 |
-| MITRE ATT&CK techniques detected | 9 |
+| Total alerts generated | 4230+ |
+| MITRE ATT&CK techniques detected | 10+ |
 | Case studies complete | 1 |
 | Monitored endpoints | 1 |
-| Custom detection rules written | 0 — coming next |
+| Custom detection rules written | 2 |
 
 ---
 
@@ -50,8 +50,9 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 esc/
 ├── case-studies/       One folder per investigation — report and evidence
 ├── worklogs/           Session logs — what was tested, found, and learned
+├── detections/         Custom Wazuh rules — syntax, MITRE mapping, evidence
 ├── build-your-own/     Full step-by-step guide to replicate this lab
-├── docs/               Reference docs — credentials, lessons learned
+├── references/         Reference docs — credentials, lessons learned
 └── assets/             Architecture diagrams, banners
 ```
 

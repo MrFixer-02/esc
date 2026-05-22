@@ -10,11 +10,13 @@ Raw working notes and full detail stay in the private lab journal. These logs ar
 
 ## Index
 
-| Date | Focus | Case Study |
-|---|---|---|
-| [2026-05-15](2026-05-15.md) | Wazuh stack deployment · agent enrollment | — |
-| [2026-05-16](2026-05-16.md) | Attack simulations · 7 attack types · detection verification | [001](../case-studies/001-ssh-brute-force/case-study.md) |
-| [2026-05-17](2026-05-17.md) | Evidence collection · case study 001 | — |
+| Date | Focus | Case Study | Evidence |
+|---|---|---|---|
+| [2026-05-15](2026-05-15.md) | Wazuh stack deployment · agent enrollment | — | — |
+| [2026-05-16](2026-05-16.md) | Attack simulations · 7 attack types · detection verification | [001](../case-studies/001-ssh-brute-force/case-study.md) | [→](../case-studies/001-ssh-brute-force/evidence/) |
+| [2026-05-17](2026-05-17.md) | Evidence collection · case study 001 | — | [→](../case-studies/001-ssh-brute-force/evidence/) |
+| [2026-05-20](2026-05-20.md) | VirusTotal integration · FIM active response pipeline · Custom detection rules | — | [→](evidence/20.05.26/) |
+| [2026-05-22](2026-05-22.md) | Wazuh full rebuild · VirusTotal v3 API migration · Custom detection rules 100001 + 100002 verified | — | [→](evidence/22.05.26/) |
 
 ---
 
