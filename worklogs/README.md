@@ -21,3 +21,4 @@ Raw working notes and full detail stay in the private lab journal. These logs ar
 ---
 
 *Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*
+| 2026-05-23 | Fixed repo: footer text, CHANGELOG rewrite, build guide updates, evidence index  | — |
