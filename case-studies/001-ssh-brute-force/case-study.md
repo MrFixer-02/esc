@@ -84,7 +84,8 @@ ssh root@[target-ip]         # root SSH disabled on Ubuntu — always fails
 - [E-04 — Events list](./evidence/screenshots/04-events-list.png) — Individual rule firings with timestamps
 - [E-05 — Events fullscreen](./evidence/screenshots/05-events-fullscreen.png) — 799 hits, 54 pages
 - [E-06 — Agent active](./evidence/screenshots/06-agent-active.png) — ubuntu-target confirmed Active
-- [Log files](./evidence/logs/) — events-export.csv (799 rows), wazuh-report.pdf
+- [events-export.csv](./evidence/logs/events-export.csv) — Raw event export, 799 rows
+- [wazuh-report.pdf](./evidence/logs/wazuh-report.pdf) — Official Wazuh threat hunting report
 
 See [evidence-index.md](./evidence/evidence-index.md) for full evidence register.
 
