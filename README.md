@@ -40,7 +40,7 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 | MITRE ATT&CK techniques detected | 10+ |
 | Case studies complete | 1 |
 | Monitored endpoints | 1 |
-| Custom detection rules written | 2 |
+| Custom detection rules written | 4 |
 
 ---
 

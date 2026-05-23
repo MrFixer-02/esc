@@ -29,3 +29,5 @@ Case study: [001 — SSH Brute Force](case-studies/001-ssh-brute-force/case-stud
 ---
 
 *Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*
+
+## 2026-05-23 — VirusTotal free tier (4 req/min) is insufficient for realtime FIM on an active system. FIM generates burst events on eve
