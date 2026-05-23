@@ -1,0 +1,800 @@
+timestamp,agent.name,rule.description,rule.level,rule.id
+"May 17, 2026 @ 10:09:25.089",ubuntu-target,PAM: Login session opened.,3,5501
+"May 17, 2026 @ 10:09:25.071",ubuntu-target,PAM: Login session opened.,3,5501
+"May 17, 2026 @ 10:09:25.070",ubuntu-target,Apparmor DENIED,3,52002
+"May 17, 2026 @ 10:09:07.650",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.593",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.497",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.495",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.493",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.491",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.490",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.489",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.258",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.196",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.134",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:07.048",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.918",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.857",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.796",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.735",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.675",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.614",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.553",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.492",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.431",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.369",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.308",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.249",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.190",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:06.122",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 17, 2026 @ 10:09:05.039",ubuntu-target,Wazuh agent started.,3,503
+"May 17, 2026 @ 10:06:55.075",wazuh-server,PAM: Login session opened.,3,5501
+"May 17, 2026 @ 10:06:55.075",wazuh-server,sshd: authentication success.,3,5715
+"May 17, 2026 @ 10:06:31.060",wazuh-server,PAM: Login session opened.,3,5501
+"May 17, 2026 @ 10:06:31.060",wazuh-server,PAM: Login session opened.,3,5501
+"May 17, 2026 @ 10:05:59.559",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 21:44:32.214",ubuntu-target,Wazuh agent stopped.,3,506
+"May 16, 2026 @ 20:35:05.092",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:35:05.092",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:35:05.092",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:34:35.070",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:34:31.070",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:34:31.070",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:34:11.061",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:34:11.061",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:34:11.061",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:33:33.039",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:33:33.039",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:33:33.039",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:33:29.037",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:33:29.037",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:33:29.037",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:33:19.034",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:31:00.949",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:31:00.949",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:27:28.815",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:27:28.815",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:27:28.815",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:27:18.815",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:27:18.815",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:27:18.815",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:27:13.821",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 20:27:08.814",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:26:21.685",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:26:17.684",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:26:17.684",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:22:35.548",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:22:35.547",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:22:35.547",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:22:07.529",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:22:07.529",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:22:07.529",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:21:29.497",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:21:29.497",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:21:29.497",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:21:29.497",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:21:29.497",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:21:21.493",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:20:41.469",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:20:41.469",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:20:19.453",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:20:19.453",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:20:19.453",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:19:59.434",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:19:59.434",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:19:59.434",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:19:53.434",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:19:53.434",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:19:53.433",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:18:47.383",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:18:47.383",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:18:47.383",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:18:43.380",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:18:41.259",wazuh-server,Dpkg (Debian Package) half configured.,7,2904
+"May 16, 2026 @ 20:18:41.259",wazuh-server,Dpkg (Debian Package) half configured.,7,2904
+"May 16, 2026 @ 20:18:41.259",wazuh-server,New dpkg (Debian Package) requested to install.,3,2901
+"May 16, 2026 @ 20:18:41.259",wazuh-server,New dpkg (Debian Package) installed.,7,2902
+"May 16, 2026 @ 20:18:41.259",wazuh-server,New dpkg (Debian Package) installed.,7,2902
+"May 16, 2026 @ 20:18:37.378",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:18:37.378",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:18:03.342",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:18:03.342",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:18:03.342",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:17:47.333",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:17:47.333",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:17:47.333",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:17:29.316",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:17:29.316",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:17:29.316",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:17:29.316",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:17:27.316",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:17:27.316",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 20:16:27.268",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 20:16:27.268",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 20:16:27.268",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 19:48:34.939",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 17:06:54.207",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:54.199",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:54.197",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:54.195",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:54.193",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:54.187",ubuntu-target,Group (or user) deleted from the system.,3,5903
+"May 16, 2026 @ 17:06:54.184",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:54.182",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:54.180",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:54.178",ubuntu-target,New user added to the system.,8,5902
+"May 16, 2026 @ 17:06:54.176",ubuntu-target,New group added to the system.,8,5901
+"May 16, 2026 @ 17:06:54.174",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:54.172",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:54.170",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:54.169",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:54.168",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:46.207",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:34.148",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:34.146",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:34.146",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:28.152",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:28.146",ubuntu-target,Group (or user) deleted from the system.,3,5903
+"May 16, 2026 @ 17:06:28.145",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:28.145",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:24.187",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:24.187",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:24.187",ubuntu-target,New group added to the system.,8,5901
+"May 16, 2026 @ 17:06:24.187",ubuntu-target,New user added to the system.,8,5902
+"May 16, 2026 @ 17:06:24.141",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:06:14.137",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:06:14.135",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 17:06:14.135",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:05:02.098",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:05:02.054",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 17:04:38.074",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:04:38.074",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 17:04:38.027",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 17:04:09.996",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:04:07.995",ubuntu-target,PAM: User login failed.,5,5503
+"May 16, 2026 @ 17:04:07.995",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:04:03.995",ubuntu-target,syslog: User missed the password more than one time,10,2502
+"May 16, 2026 @ 17:04:03.993",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:04:01.990",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:03:57.983",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:03:53.978",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:03:49.976",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:03:48.019",ubuntu-target,PAM: User login failed.,5,5503
+"May 16, 2026 @ 17:03:47.972",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:02:11.886",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 17:02:09.922",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 17:02:09.922",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 17:02:09.877",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 17:01:49.861",ubuntu-target,syslog: User missed the password more than one time,10,2502
+"May 16, 2026 @ 17:01:49.859",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:47.858",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:01:43.851",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:41.849",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:01:39.846",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:37.890",ubuntu-target,PAM: User login failed.,5,5503
+"May 16, 2026 @ 17:01:37.843",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:01:21.832",ubuntu-target,syslog: User missed the password more than one time,10,2502
+"May 16, 2026 @ 17:01:19.832",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:17.831",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:01:13.824",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 17:01:13.824",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:09.818",ubuntu-target,sshd: authentication failed.,5,5760
+"May 16, 2026 @ 17:01:07.858",ubuntu-target,PAM: User login failed.,5,5503
+"May 16, 2026 @ 17:01:07.813",ubuntu-target,unix_chkpwd: Password check failed.,5,5557
+"May 16, 2026 @ 16:47:38.015",wazuh-server,sshd: authentication success.,3,5715
+"May 16, 2026 @ 16:47:38.015",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:47:11.215",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 16:47:07.211",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:47:07.211",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 16:46:37.214",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:46:37.195",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:46:37.193",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 16:45:57.940",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:45:57.940",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 16:45:29.930",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 16:45:26.746",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.688",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.611",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.609",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.609",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.609",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.585",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.584",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.365",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.308",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.245",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.163",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:26.035",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.974",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.914",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.853",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.793",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.733",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.672",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.612",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.552",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.490",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.430",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.370",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.343",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:25.244",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 16:45:21.237",ubuntu-target,Wazuh agent started.,3,503
+"May 16, 2026 @ 16:03:46.891",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 16:03:41.130",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:58:14.927",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:58:14.927",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:58:14.927",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:58:04.927",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:58:04.926",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:58:04.926",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:57:59.929",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:57:54.924",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:55.949",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:49.947",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:54:49.947",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:54:45.946",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:45.946",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:43.945",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:54:43.945",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:54:43.945",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:54:39.944",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:54:39.944",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:39.944",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:54:19.921",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:54:19.921",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:54:19.921",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:53:37.894",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:53:37.893",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:53:35.893",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:53:35.893",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:53:35.893",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:53:29.892",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:53:29.892",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:53:29.892",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:53:25.889",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:53:25.889",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:53:25.889",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:48:59.722",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:48:59.722",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:48:59.722",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:48:45.715",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:48:45.715",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:48:45.715",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:48:34.719",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:48:29.712",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:43:59.513",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:43:59.513",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:43:59.513",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:43:49.512",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:43:49.512",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:43:49.512",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:43:44.519",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:43:39.509",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:42:54.523",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:42:50.520",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:42:50.520",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:37:39.334",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:37:34.322",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:37:34.322",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:37:34.322",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:37:34.322",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:37:34.322",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:37:34.322",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:37:34.322",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:37:01.399",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:36:56.391",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:36:38.538",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:36:38.538",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:32:50.391",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:32:50.391",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:32:50.391",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:31:19.349",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:31:14.342",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:30:55.424",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:30:55.424",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:30:25.399",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:30:23.397",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:30:23.397",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:29:27.365",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:29:27.365",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:29:27.365",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:28:25.330",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:28:25.330",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:28:25.330",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 16, 2026 @ 15:28:25.330",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:28:25.330",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:28:25.330",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:27:59.315",wazuh-server,Command not allowed.,5,5406
+"May 16, 2026 @ 15:27:45.306",wazuh-server,Command not allowed.,5,5406
+"May 16, 2026 @ 15:26:43.268",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:26:43.268",wazuh-server,sshd: authentication success.,3,5715
+"May 16, 2026 @ 15:26:23.669",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:26:23.669",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 15:26:23.625",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 15:20:19.439",ubuntu-target,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:20:17.442",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 15:20:17.437",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:20:17.436",ubuntu-target,sshd: authentication success.,3,5715
+"May 16, 2026 @ 15:20:00.987",wazuh-server,PAM: Login session closed.,3,5502
+"May 16, 2026 @ 15:19:56.984",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:19:56.983",wazuh-server,sshd: authentication success.,3,5715
+"May 16, 2026 @ 15:19:10.950",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:19:10.950",wazuh-server,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:18:54.965",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:18:54.949",ubuntu-target,PAM: Login session opened.,3,5501
+"May 16, 2026 @ 15:18:54.948",ubuntu-target,Apparmor DENIED,3,52002
+"May 16, 2026 @ 15:18:53.489",wazuh-server,Wazuh server started.,3,502
+"May 16, 2026 @ 15:18:48.484",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.453",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.370",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.370",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.369",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.321",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.320",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.319",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.095",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:48.034",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.974",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.892",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.764",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.703",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.645",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.582",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.520",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.459",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.397",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.335",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.273",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.246",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.150",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.089",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:47.029",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:46.959",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 16, 2026 @ 15:18:42.925",ubuntu-target,Wazuh agent started.,3,503
+"May 15, 2026 @ 22:33:16.205",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 22:33:06.089",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 22:00:21.466",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:21.464",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:21.462",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:21.450",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:21.448",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:21.446",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:21.437",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:21.435",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:21.434",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:19.480",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:19.480",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:19.480",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:17.447",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:17.445",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:17.441",ubuntu-target,Apparmor DENIED,3,52002
+"May 15, 2026 @ 22:00:17.439",ubuntu-target,Apparmor DENIED,3,52002
+"May 15, 2026 @ 22:00:15.433",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:15.431",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:13.496",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:13.496",ubuntu-target,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 22:00:13.496",ubuntu-target,Dpkg (Debian Package) removed.,7,2903
+"May 15, 2026 @ 22:00:13.450",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 22:00:13.447",ubuntu-target,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 21:56:59.369",ubuntu-target,syslog: User missed the password more than one time,10,2502
+"May 15, 2026 @ 21:56:59.367",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:53.365",ubuntu-target,sshd: brute force trying to get access to the system. Non existent user.,10,5712
+"May 15, 2026 @ 21:56:49.364",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:47.364",ubuntu-target,PAM: User login failed.,5,5503
+"May 15, 2026 @ 21:56:39.365",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:29.368",ubuntu-target,syslog: User missed the password more than one time,10,2502
+"May 15, 2026 @ 21:56:29.367",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:25.365",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:21.362",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:56:19.361",ubuntu-target,PAM: User login failed.,5,5503
+"May 15, 2026 @ 21:56:17.360",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:55:57.360",ubuntu-target,sshd: Attempt to login using a non-existent user,5,5710
+"May 15, 2026 @ 21:51:35.275",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 21:51:35.273",ubuntu-target,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 21:51:35.273",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 21:51:11.296",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 21:51:11.294",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 21:51:11.292",ubuntu-target,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 21:51:11.290",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 21:51:11.278",ubuntu-target,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 21:51:11.276",ubuntu-target,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 21:51:11.274",ubuntu-target,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 21:51:11.261",ubuntu-target,First time user executed sudo.,4,5403
+"May 15, 2026 @ 21:51:11.259",ubuntu-target,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 21:51:06.912",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.848",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.745",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.743",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.741",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.739",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.738",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.737",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.496",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.431",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.365",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.272",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.137",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.076",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:06.015",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.953",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.891",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.830",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.768",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.708",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.646",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.580",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.518",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.458",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.398",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:51:05.330",ubuntu-target,Host-based anomaly detection event (rootcheck).,7,510
+"May 15, 2026 @ 21:50:58.928",ubuntu-target,New wazuh agent connected.,3,501
+"May 15, 2026 @ 21:46:20.622",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 21:46:18.617",wazuh-server,sshd: authentication success.,3,5715
+"May 15, 2026 @ 21:46:18.617",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 21:46:12.607",wazuh-server,sshd: authentication failed.,5,5760
+"May 15, 2026 @ 21:46:10.607",wazuh-server,PAM: User login failed.,5,5503
+"May 15, 2026 @ 21:45:36.588",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:10:16.870",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:10:16.870",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:10:16.870",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:08:34.809",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:34.809",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:34.809",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:34.809",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:08.801",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:08:08.800",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:08:08.800",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:07:48.790",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:07:48.790",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:07:48.789",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:14.724",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:06:14.723",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:06:12.722",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:06:10.721",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:06:08.721",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:58.715",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:58.715",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:56.712",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:54.711",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:52.711",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:52.711",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:52.711",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:52.711",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:52.711",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:52.711",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:26.702",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:26.702",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:26.702",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:22.700",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:22.700",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:22.700",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:22.700",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:22.700",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:06.687",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:05:06.687",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:05:06.687",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:06.687",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:05:06.687",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:40.678",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:40.678",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:40.678",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:38.678",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:04:36.677",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:04:36.677",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:04:34.675",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:04:32.674",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:32.674",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:32.674",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:32.674",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:32.674",wazuh-server,Systemd: Service exited due to a failure.,5,40704
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:22.667",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:22.667",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:22.667",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:22.666",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:04:22.666",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:04:22.666",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:04:22.666",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:03:26.638",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:03:22.635",wazuh-server,New dpkg (Debian Package) installed.,7,2902
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:03:22.635",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:03:22.635",wazuh-server,Dpkg (Debian Package) half configured.,7,2904
+"May 15, 2026 @ 15:03:08.635",wazuh-server,New dpkg (Debian Package) requested to install.,3,2901
+"May 15, 2026 @ 15:03:08.634",wazuh-server,New user added to the system.,8,5902
+"May 15, 2026 @ 15:03:08.634",wazuh-server,New group added to the system.,8,5901
+"May 15, 2026 @ 15:03:02.634",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:03:02.634",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:01:22.569",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:01:22.569",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:01:22.569",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:01:22.569",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:22.569",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:08.567",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:01:06.567",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:01:06.567",wazuh-server,Successful sudo to ROOT executed.,3,5402
+"May 15, 2026 @ 15:01:04.690",wazuh-server,SCA summary: CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Score less than 50% (45),7,19004
+"May 15, 2026 @ 15:00:53.520",wazuh-server,SCA summary: CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Score less than 50% (45),7,19004
+"May 15, 2026 @ 15:00:47.582",wazuh-server,Wazuh server started.,3,502
+"May 15, 2026 @ 15:00:46.496",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/security/opasswd are configured.,7,19007
+"May 15, 2026 @ 15:00:46.486",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/shells are configured.,7,19007
+"May 15, 2026 @ 15:00:46.475",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure system warns when audit logs are low on space.,7,19007
+"May 15, 2026 @ 15:00:46.465",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure systemd-journal-upload is enabled and active.,7,19007
+"May 15, 2026 @ 15:00:46.455",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure systemd-journal-remote authentication is configured.,3,19009
+"May 15, 2026 @ 15:00:46.445",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure filesystem integrity is regularly checked.,7,19007
+"May 15, 2026 @ 15:00:46.435",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure default user umask is configured.,3,19008
+"May 15, 2026 @ 15:00:46.425",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nologin is not listed in /etc/shells.,3,19008
+"May 15, 2026 @ 15:00:46.415",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure root user umask is configured.,3,19008
+"May 15, 2026 @ 15:00:46.405",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure root password is set.,7,19007
+"May 15, 2026 @ 15:00:46.394",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure root is the only GID 0 account.,3,19008
+"May 15, 2026 @ 15:00:46.384",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure root is the only UID 0 account.,3,19008
+"May 15, 2026 @ 15:00:46.373",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_unix includes a strong password hashing algorithm.,3,19008
+"May 15, 2026 @ 15:00:46.363",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_unix includes use_authtok.,7,19007
+"May 15, 2026 @ 15:00:46.353",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_unix does not include remember.,3,19008
+"May 15, 2026 @ 15:00:46.343",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_unix does not include nullok.,7,19007
+"May 15, 2026 @ 15:00:46.333",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_pwhistory includes use_authtok.,7,19007
+"May 15, 2026 @ 15:00:46.322",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password history is enforced for the root user.,7,19007
+"May 15, 2026 @ 15:00:46.312",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password history remember is configured.,7,19007
+"May 15, 2026 @ 15:00:46.302",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password quality is enforced for the root user.,3,19009
+"May 15, 2026 @ 15:00:46.292",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password quality checking is enforced.,7,19007
+"May 15, 2026 @ 15:00:46.282",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password dictionary check is enabled.,7,19007
+"May 15, 2026 @ 15:00:46.271",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password maximum sequential characters is configured.,3,19009
+"May 15, 2026 @ 15:00:46.261",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password same consecutive characters is configured.,3,19009
+"May 15, 2026 @ 15:00:46.250",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password complexity is configured.,3,19009
+"May 15, 2026 @ 15:00:46.240",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure minimum password length is configured.,3,19008
+"May 15, 2026 @ 15:00:46.230",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password number of changed characters is configured.,3,19008
+"May 15, 2026 @ 15:00:46.219",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password failed attempts lockout includes root account.,3,19008
+"May 15, 2026 @ 15:00:46.209",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password unlock time is configured.,3,19008
+"May 15, 2026 @ 15:00:46.198",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_faillock module is enabled.,7,19007
+"May 15, 2026 @ 15:00:46.187",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_pwhistory module is enabled.,7,19007
+"May 15, 2026 @ 15:00:46.177",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_pwquality module is enabled.,7,19007
+"May 15, 2026 @ 15:00:46.167",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure pam_unix module is enabled.,3,19008
+"May 15, 2026 @ 15:00:46.157",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd GSSAPIAuthentication is disabled.,3,19008
+"May 15, 2026 @ 15:00:46.146",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd DisableForwarding is enabled.,7,19007
+"May 15, 2026 @ 15:00:46.136",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on SSH public host key files are configured.,3,19008
+"May 15, 2026 @ 15:00:46.124",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw is uninstalled or disabled with nftables.,3,19008
+"May 15, 2026 @ 15:00:46.114",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure bluetooth services are not in use.,3,19008
+"May 15, 2026 @ 15:00:46.104",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure IPv6 status is identified.,3,19008
+"May 15, 2026 @ 15:00:46.094",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ftp client is not installed.,7,19007
+"May 15, 2026 @ 15:00:46.084",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure xinetd services are not in use.,3,19008
+"May 15, 2026 @ 15:00:46.073",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure tftp server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:46.063",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure dnsmasq services are not in use.,3,19008
+"May 15, 2026 @ 15:00:46.053",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure GDM is removed.,3,19008
+"May 15, 2026 @ 15:00:46.042",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure /dev/shm is a separate partition.,3,19008
+"May 15, 2026 @ 15:00:46.031",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure all groups in /etc/passwd exist in /etc/group.,3,19008
+"May 15, 2026 @ 15:00:46.021",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure /etc/shadow password fields are not empty.,3,19008
+"May 15, 2026 @ 15:00:46.011",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure accounts in /etc/passwd use shadowed passwords.,3,19008
+"May 15, 2026 @ 15:00:46.001",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/gshadow- are configured.,7,19007
+"May 15, 2026 @ 15:00:45.990",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/gshadow are configured.,7,19007
+"May 15, 2026 @ 15:00:45.980",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/shadow- are configured.,7,19007
+"May 15, 2026 @ 15:00:45.969",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/shadow are configured.,7,19007
+"May 15, 2026 @ 15:00:45.959",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/group- are configured.,3,19008
+"May 15, 2026 @ 15:00:45.949",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/group are configured.,3,19008
+"May 15, 2026 @ 15:00:45.939",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/passwd- are configured.,3,19008
+"May 15, 2026 @ 15:00:45.929",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/passwd are configured.,3,19008
+"May 15, 2026 @ 15:00:45.919",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure group root is the only GID 0 group.,3,19008
+"May 15, 2026 @ 15:00:45.909",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure inactive password lock is configured.,7,19007
+"May 15, 2026 @ 15:00:45.898",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password expiration warning days is configured.,3,19008
+"May 15, 2026 @ 15:00:45.888",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password expiration is configured.,7,19007
+"May 15, 2026 @ 15:00:45.878",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure minimum password age is configured.,7,19007
+"May 15, 2026 @ 15:00:45.868",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure strong password hashing algorithm is configured.,3,19008
+"May 15, 2026 @ 15:00:45.858",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure password failed attempts lockout is configured.,3,19008
+"May 15, 2026 @ 15:00:45.847",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure libpam-pwquality is installed.,7,19007
+"May 15, 2026 @ 15:00:45.831",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure access to the su command is restricted.,7,19007
+"May 15, 2026 @ 15:00:45.821",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sudo authentication timeout is configured correctly.,3,19008
+"May 15, 2026 @ 15:00:45.811",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure re-authentication for privilege escalation is not disabled globally.,3,19008
+"May 15, 2026 @ 15:00:45.801",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure users must provide password for privilege escalation.,3,19008
+"May 15, 2026 @ 15:00:45.790",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sudo log file exists.,7,19007
+"May 15, 2026 @ 15:00:45.780",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sudo commands use pty.,3,19008
+"May 15, 2026 @ 15:00:45.770",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sudo is installed.,3,19008
+"May 15, 2026 @ 15:00:45.760",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd ClientAliveInterval and ClientAliveCountMax are configured.,7,19007
+"May 15, 2026 @ 15:00:45.749",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd LoginGraceTime is configured.,7,19007
+"May 15, 2026 @ 15:00:45.739",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd MaxSessions is configured.,3,19008
+"May 15, 2026 @ 15:00:45.729",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd MaxStartups is configured.,7,19007
+"May 15, 2026 @ 15:00:45.719",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd MaxAuthTries is configured.,7,19007
+"May 15, 2026 @ 15:00:45.709",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd Banner is configured.,7,19007
+"May 15, 2026 @ 15:00:45.699",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd KexAlgorithms is configured.,3,19008
+"May 15, 2026 @ 15:00:45.689",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd MACs are configured.,7,19007
+"May 15, 2026 @ 15:00:45.678",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd Ciphers are configured.,3,19008
+"May 15, 2026 @ 15:00:45.667",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd IgnoreRhosts is enabled.,3,19008
+"May 15, 2026 @ 15:00:45.657",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd PermitUserEnvironment is disabled.,3,19008
+"May 15, 2026 @ 15:00:45.647",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd PermitEmptyPasswords is disabled.,3,19008
+"May 15, 2026 @ 15:00:45.635",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd HostbasedAuthentication is disabled.,3,19008
+"May 15, 2026 @ 15:00:45.625",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd PermitRootLogin is disabled.,7,19007
+"May 15, 2026 @ 15:00:45.614",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd UsePAM is enabled.,3,19008
+"May 15, 2026 @ 15:00:45.603",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd LogLevel is configured.,3,19008
+"May 15, 2026 @ 15:00:45.593",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure sshd access is configured.,7,19007
+"May 15, 2026 @ 15:00:45.583",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/ssh/sshd_config are configured.,7,19007
+"May 15, 2026 @ 15:00:45.573",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/cron.d are configured.,7,19007
+"May 15, 2026 @ 15:00:45.562",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/cron.monthly are configured.,7,19007
+"May 15, 2026 @ 15:00:45.552",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/cron.weekly are configured.,7,19007
+"May 15, 2026 @ 15:00:45.542",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/cron.daily are configured.,7,19007
+"May 15, 2026 @ 15:00:45.532",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/cron.hourly are configured.,7,19007
+"May 15, 2026 @ 15:00:45.521",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure permissions on /etc/crontab are configured.,7,19007
+"May 15, 2026 @ 15:00:45.511",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure cron daemon is enabled and active.,3,19008
+"May 15, 2026 @ 15:00:45.501",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure journald ForwardToSyslog is disabled.,3,19009
+"May 15, 2026 @ 15:00:45.490",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure journald Storage is configured.,3,19009
+"May 15, 2026 @ 15:00:45.480",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure journald Compress is configured.,3,19009
+"May 15, 2026 @ 15:00:45.469",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure journald service is enabled and active.,3,19008
+"May 15, 2026 @ 15:00:45.459",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure systemd-journal-remote service is not in use.,3,19008
+"May 15, 2026 @ 15:00:45.449",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure systemd-journal-remote is installed.,7,19007
+"May 15, 2026 @ 15:00:45.439",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure cryptographic mechanisms are used to protect the integrity of audit tools.,3,19009
+"May 15, 2026 @ 15:00:45.429",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit tools group owner is configured.,7,19007
+"May 15, 2026 @ 15:00:45.419",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit tools owner is configured.,7,19007
+"May 15, 2026 @ 15:00:45.409",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit tools mode is configured.,7,19007
+"May 15, 2026 @ 15:00:45.399",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit configuration files group owner is configured.,3,19008
+"May 15, 2026 @ 15:00:45.389",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit configuration files owner is configured.,3,19008
+"May 15, 2026 @ 15:00:45.378",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit configuration files mode is configured.,3,19008
+"May 15, 2026 @ 15:00:45.368",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit log files group owner is configured.,3,19009
+"May 15, 2026 @ 15:00:45.358",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure the audit configuration is immutable.,7,19007
+"May 15, 2026 @ 15:00:45.347",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure events that modify the system's Mandatory Access Controls are collected.,7,19007
+"May 15, 2026 @ 15:00:45.337",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure login and logout events are collected.,7,19007
+"May 15, 2026 @ 15:00:45.327",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure session initiation information is collected.,7,19007
+"May 15, 2026 @ 15:00:45.317",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure events that modify user/group information are collected.,7,19007
+"May 15, 2026 @ 15:00:45.307",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure events that modify the system's network environment are collected.,7,19007
+"May 15, 2026 @ 15:00:45.297",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure events that modify date and time information are collected.,7,19007
+"May 15, 2026 @ 15:00:45.287",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure actions as another user are always logged.,7,19007
+"May 15, 2026 @ 15:00:45.277",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure changes to system administration scope (sudoers) is collected.,7,19007
+"May 15, 2026 @ 15:00:45.266",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure system is disabled when audit logs are full.,7,19007
+"May 15, 2026 @ 15:00:45.256",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit logs are not automatically deleted.,7,19007
+"May 15, 2026 @ 15:00:45.246",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit log storage size is configured.,7,19007
+"May 15, 2026 @ 15:00:45.236",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure audit_backlog_limit is sufficient.,7,19007
+"May 15, 2026 @ 15:00:45.226",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure auditing for processes that start prior to auditd is enabled.,3,19008
+"May 15, 2026 @ 15:00:45.215",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure auditd service is enabled and active.,7,19007
+"May 15, 2026 @ 15:00:45.205",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure auditd packages are installed.,7,19007
+"May 15, 2026 @ 15:00:45.195",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ip6tables loopback traffic is configured.,7,19007
+"May 15, 2026 @ 15:00:45.185",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ip6tables default deny firewall policy.,7,19007
+"May 15, 2026 @ 15:00:45.174",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure iptables loopback traffic is configured.,7,19007
+"May 15, 2026 @ 15:00:45.164",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure iptables default deny firewall policy.,7,19007
+"May 15, 2026 @ 15:00:45.154",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw is uninstalled or disabled with iptables.,3,19008
+"May 15, 2026 @ 15:00:45.143",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nftables is not installed with iptables.,7,19007
+"May 15, 2026 @ 15:00:45.133",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure iptables packages are installed.,7,19007
+"May 15, 2026 @ 15:00:45.123",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nftables service is enabled.,7,19007
+"May 15, 2026 @ 15:00:45.113",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nftables default deny firewall policy.,7,19007
+"May 15, 2026 @ 15:00:45.103",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nftables base chains exist.,7,19007
+"May 15, 2026 @ 15:00:45.093",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure a nftables table exists.,7,19007
+"May 15, 2026 @ 15:00:45.082",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nftables is installed.,3,19008
+"May 15, 2026 @ 15:00:45.072",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw default deny firewall policy.,7,19007
+"May 15, 2026 @ 15:00:45.061",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw loopback traffic is configured.,7,19007
+"May 15, 2026 @ 15:00:45.051",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw service is enabled.,3,19008
+"May 15, 2026 @ 15:00:45.041",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure iptables-persistent is not installed with ufw.,3,19008
+"May 15, 2026 @ 15:00:45.031",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ufw is installed.,3,19008
+"May 15, 2026 @ 15:00:45.021",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure rpcbind services are not in use.,3,19008
+"May 15, 2026 @ 15:00:45.010",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ldap client is not installed.,3,19008
+"May 15, 2026 @ 15:00:44.999",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure telnet client is not installed.,7,19007
+"May 15, 2026 @ 15:00:44.989",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure talk client is not installed.,3,19008
+"May 15, 2026 @ 15:00:44.979",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure rsh client is not installed.,3,19008
+"May 15, 2026 @ 15:00:44.969",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure NIS Client is not installed.,3,19008
+"May 15, 2026 @ 15:00:44.959",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure rsync services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.949",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure mail transfer agent is configured for local-only mode.,3,19008
+"May 15, 2026 @ 15:00:44.939",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nis server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.929",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure snmp services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.918",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure web proxy server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.908",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure samba file server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.898",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure message access server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.888",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure web server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.878",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ftp server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.867",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure dns server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.852",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure network file system services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.842",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure ldap server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.832",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure dhcp server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.822",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure print server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.812",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure avahi daemon services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.801",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure X window server services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.791",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure systemd-timesyncd is enabled and running.,3,19008
+"May 15, 2026 @ 15:00:44.780",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure chrony is enabled and running.,7,19007
+"May 15, 2026 @ 15:00:44.770",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure chrony is running as user _chrony.,3,19009
+"May 15, 2026 @ 15:00:44.760",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure access to /etc/issue.net is configured.,3,19008
+"May 15, 2026 @ 15:00:44.750",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure access to /etc/issue is configured.,3,19008
+"May 15, 2026 @ 15:00:44.740",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure access to /etc/motd is configured.,3,19008
+"May 15, 2026 @ 15:00:44.730",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure remote login warning banner is configured properly.,7,19007
+"May 15, 2026 @ 15:00:44.720",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure local login warning banner is configured properly.,7,19007
+"May 15, 2026 @ 15:00:44.709",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure message of the day is configured properly.,3,19008
+"May 15, 2026 @ 15:00:44.701",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure AppArmor is enabled in the bootloader configuration.,7,19007
+"May 15, 2026 @ 15:00:44.689",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure AppArmor is installed.,7,19007
+"May 15, 2026 @ 15:00:44.679",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure Automatic Error Reporting is not enabled.,7,19007
+"May 15, 2026 @ 15:00:44.669",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure prelink is not installed.,3,19008
+"May 15, 2026 @ 15:00:44.659",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure access to bootloader config is configured.,7,19007
+"May 15, 2026 @ 15:00:44.649",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure bootloader password is set.,7,19007
+"May 15, 2026 @ 15:00:44.639",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure AIDE is installed.,7,19007
+"May 15, 2026 @ 15:00:44.629",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure autofs services are not in use.,3,19008
+"May 15, 2026 @ 15:00:44.619",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /dev/shm partition.,3,19008
+"May 15, 2026 @ 15:00:44.609",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure noexec option set on /dev/shm partition.,7,19007
+"May 15, 2026 @ 15:00:44.598",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /dev/shm partition.,3,19008
+"May 15, 2026 @ 15:00:44.588",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /home partition.,7,19007
+"May 15, 2026 @ 15:00:44.578",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /home partition.,7,19007
+"May 15, 2026 @ 15:00:44.569",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure separate partition exists for /home.,7,19007
+"May 15, 2026 @ 15:00:44.558",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /var/log/audit partition.,7,19007
+"May 15, 2026 @ 15:00:44.548",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /var/log/audit partition.,7,19007
+"May 15, 2026 @ 15:00:44.538",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure noexec option set on /var/log/audit partition.,7,19007
+"May 15, 2026 @ 15:00:44.528",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure separate partition exists for /var/log/audit.,7,19007
+"May 15, 2026 @ 15:00:44.518",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /var/log partition.,7,19007
+"May 15, 2026 @ 15:00:44.513",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure noexec option set on /var/log partition.,7,19007
+"May 15, 2026 @ 15:00:44.497",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /var/log partition.,7,19007
+"May 15, 2026 @ 15:00:44.487",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure separate partition exists for /var/log.,7,19007
+"May 15, 2026 @ 15:00:44.477",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /var/tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.467",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /var/tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.457",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure noexec option set on /var/tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.447",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure separate partition exists for /var/tmp.,7,19007
+"May 15, 2026 @ 15:00:44.437",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /var partition.,7,19007
+"May 15, 2026 @ 15:00:44.427",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /var partition.,7,19007
+"May 15, 2026 @ 15:00:44.415",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure separate partition exists for /var.,7,19007
+"May 15, 2026 @ 15:00:44.404",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nosuid option set on /tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.392",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure noexec option set on /tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.380",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure nodev option set on /tmp partition.,7,19007
+"May 15, 2026 @ 15:00:44.370",wazuh-server,CIS Ubuntu Linux 22.04 LTS Benchmark v2.0.0.: Ensure /tmp is a separate partition.,7,19007
+"May 15, 2026 @ 15:00:42.565",wazuh-server,PAM: Login session opened.,3,5501
+"May 15, 2026 @ 15:00:42.565",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:00:42.565",wazuh-server,PAM: Login session closed.,3,5502
+"May 15, 2026 @ 15:00:42.565",wazuh-server,First time user executed sudo.,4,5403
