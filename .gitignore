@@ -15,9 +15,12 @@ Thumbs.db
 *.pfx
 passwords.txt
 credentials.txt
+credentials*
 secrets.txt
 .env
 *.env
+.env*
+*api_key*
 
 # Logs
 *.log
@@ -54,6 +57,21 @@ wazuh-certificates/
 
 # Screenshots with sensitive info (add manually if needed)
 # screenshots/
+
+# PCAP / capture files
+*.pcap
+*.pcapng
+
+# Data exports
+*.csv
+
+# Memory and session artifacts
+esc-memory/
+phase-*-memory.txt
+
+# Lab output directories
+raw-rep/
+logsrep-ED/
 
 # Temporary files
 tmp/

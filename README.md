@@ -44,6 +44,12 @@ This is not a tutorial repo. It is a working lab I use to build real defensive s
 
 ---
 
+## Latest Updates
+
+**v1.2.0 (May 22, 2026)** — VirusTotal v3 integration, active response pipeline, custom rules 100001+100002 at Level 10, 4230+ alerts, 10+ MITRE ATT&CK techniques. → [Full changelog](CHANGELOG.md)
+
+---
+
 ## What is Inside This Repo
 
 ```

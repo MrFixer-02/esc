@@ -4,7 +4,7 @@
 
 > If you are on Windows or an Intel Mac — the design is identical. Replace UTM with VirtualBox or VMware and select `amd64` packages instead of `aarch64` wherever mentioned.
 
-Part of the [esc SOC Home Lab](../README.md) project · [github.com/MrFixer-02/esc](https://github.com/MrFixer-02/esc)
+Part of [esc - SOC Home Lab](../README.md)
 
 ---
 
@@ -87,11 +87,16 @@ Everything runs inside your Mac on an isolated NAT network. Nothing is exposed t
 
 ## 🔧 Building Your SOC Lab
 
-> ✅ **Tested on:** MacBook Pro M5 · UTM 4.x · macOS Sonoma · Wazuh 4.14.5 · May 2026
->
-> These steps are verified to work on this setup. If you are on a different M-series Mac (M1/M2/M3/M4) the steps are identical. Different UTM versions may have slightly different UI but the same core functionality.
+> ⚠️ **Tested on:** MacBook Pro M5 · UTM 4.x · macOS Tahoe · Wazuh 4.14.5 · May 2026
+
+> 📋 These steps are verified to work on this setup. If you are on a different M-series Mac (M1/M2/M3/M4) the steps are identical. Different UTM versions may have slightly different UI but the same core functionality.
 
 ### Before You Start
+
+- **Follow the parts in order** — each part depends on the previous one completing successfully.
+- **Stuck on a step?** Open a [Discussion](https://github.com/MrFixer-02/esc/discussions) — describe the step you're on and paste what you see.
+- **Getting an error?** Copy the exact message and search it — most ARM64 issues are documented somewhere online.
+- **Take UTM snapshots** before major steps so you can roll back without starting from scratch.
 
 This guide installs Wazuh **component by component** using apt, not the all-in-one installer script. The official `wazuh-install.sh` has a dashboard initialization timeout on ARM64 — the installer waits 5 minutes for the dashboard to start, but ARM64 systems need 10-15 minutes. The install always fails at this step. We skip the script entirely and install each component directly — this also gives you a better understanding of the architecture.
 
@@ -490,6 +495,12 @@ Wazuh automatically maps these to **MITRE ATT&CK T1110 — Brute Force**.
 If a step didn't work for you — open a GitHub Issue. Include your Mac model, macOS version, and UTM version. Reports from different setups help make this guide better for everyone.
 
 👉 [Open an Issue](https://github.com/MrFixer-02/esc/issues)
+
+---
+
+## 💬 Share Your Build
+
+Got your lab running? Drop a note in [Discussions](https://github.com/MrFixer-02/esc/discussions) — setup variations, alternate configs, things that didn't work, or just to say it ran.
 
 ---
 

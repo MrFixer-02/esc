@@ -255,4 +255,4 @@ Should return JSON. You are back to `admin/admin`. Now use the API method above 
 
 ---
 
-*Part of the [esc SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [Komal Kakarla](https://github.com/MrFixer-02)*
+*Part of [esc - SOC Home Lab](https://github.com/MrFixer-02/esc) · Built by [deadlilac](https://github.com/MrFixer-02)*
