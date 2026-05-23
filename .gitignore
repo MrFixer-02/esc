@@ -64,6 +64,7 @@ wazuh-certificates/
 
 # Data exports
 *.csv
+!case-studies/*/evidence/logs/*.csv
 
 # Memory and session artifacts
 esc-memory/
